@@ -50,7 +50,7 @@ export async function POST(req: Request, { params }: { params: Promise<{ id: str
     return NextResponse.json(pipelineResult);
   }
 
-  // Pipeline keyword matching failed — use LLM for smart dimension matching
+  // Pipeline keyword matching failed — use LLM for smart context-aware follow-up
   const client = getClient();
   if (client && draftReview.length > 0) {
     try {
@@ -59,7 +59,6 @@ export async function POST(req: Request, { params }: { params: Promise<{ id: str
 
       // Filter out dimensions whose coarse topic is already answered
       const availableDimensions = dimensionLabels.filter((label) => {
-        // Check if any answered topic covers this dimension
         return !answeredTopics.some((at) => {
           const atLower = at.toLowerCase();
           return atLower === label || label.includes(atLower) || atLower.includes(label);
@@ -72,38 +71,73 @@ export async function POST(req: Request, { params }: { params: Promise<{ id: str
         return NextResponse.json({ topic: null });
       }
 
+      // Get pipeline issues for context (priority + evidence)
+      const pipelineContext = getPipelineIssuesForLLM(id);
+      const issuesSummary = pipelineContext.issues
+        .filter((i) => !answeredSet.has(i.coarseTopic))
+        .slice(0, 5)
+        .map((i) => `- ${i.coarseTopic} (${i.dimension}): priority ${i.priority}, type: ${i.issueType}, evidence: "${i.evidence}"`)
+        .join("\n");
+
       const response = await client.chat.completions.create({
         model: "gpt-4o-mini",
         messages: [
           {
             role: "system",
-            content: `You analyze hotel review drafts and pick the best follow-up dimension to ask about.
+            content: `You are a smart hotel review assistant. Analyze the user's review draft and decide the best follow-up.
 
-Given the review text and a list of hotel dimensions with information gaps, do TWO things:
-1. Check if the LAST sentence/phrase relates to any dimension (semantic match — e.g. "breakfast" → "restaurant", "noisy" → "noise level", "hot room" → "air conditioning and heating")
-2. If yes, return that dimension. If not, pick the most valuable dimension NOT YET covered by the review.
+You have TWO strategies:
+1. **User-centric**: If the user's LAST sentence mentions a specific topic (e.g. "shuttle", "breakfast", "noisy neighbors"), ask a relevant follow-up question about THAT topic. The question should dig deeper into what the user is writing about.
+2. **Pipeline-driven**: If the user's last sentence is generic or wraps up a thought (e.g. "Overall it was nice.", "We had a good time."), suggest the highest-priority information gap from the pipeline issues list.
+
+Return JSON with these fields:
+- "strategy": "user_centric" or "pipeline_driven"
+- "dimension": the matched dimension name from the available list (EXACTLY as listed), or "general" if none fit
+- "question": a natural, specific follow-up question (max 15 words). For user-centric, ask about what THEY mentioned. For pipeline-driven, introduce the gap topic naturally.
+- "rationale": one short sentence explaining why this question helps (max 15 words)
 
 Rules:
-- If the review already discusses a dimension (even indirectly), skip it. E.g. if review mentions "food was great", then "restaurant" is already covered.
-- Return the dimension name EXACTLY as listed.
-- If all dimensions are covered, return "general".
-- Return ONLY the dimension name, nothing else.`,
+- Semantic matching: "breakfast" → "restaurant", "shuttle" → "location", "noisy" → "noise level", "hot room" → "air conditioning"
+- If the review already covers a dimension, skip it
+- Keep questions conversational and easy to answer
+- Return ONLY valid JSON, nothing else`,
           },
           {
             role: "user",
-            content: `Review draft: "${draftReview}"\n\nAvailable dimensions (with information gaps): ${availableDimensions.join(", ")}\n\nWhich dimension should the follow-up question be about?`,
+            content: `Review draft: "${draftReview}"
+
+Available dimensions (with info gaps): ${availableDimensions.join(", ")}
+
+Pipeline priority issues:
+${issuesSummary || "No priority issues available."}
+
+Generate the best follow-up.`,
           },
         ],
-        temperature: 0,
-        max_tokens: 30,
+        temperature: 0.3,
+        max_tokens: 150,
       });
 
-      const detected = response.choices[0]?.message?.content?.trim().toLowerCase() || "general";
+      const raw = response.choices[0]?.message?.content?.trim() || "";
+      let llmResult: { strategy?: string; dimension?: string; question?: string; rationale?: string } = {};
+      try {
+        // Parse JSON, handling markdown code blocks
+        const jsonStr = raw.replace(/^```json?\s*/, "").replace(/\s*```$/, "");
+        llmResult = JSON.parse(jsonStr);
+      } catch {
+        // Fallback: treat as dimension name (backward compat)
+        llmResult = { dimension: raw.toLowerCase(), strategy: "pipeline_driven" };
+      }
+
+      const detected = (llmResult.dimension || "general").toLowerCase();
 
       if (detected !== "general") {
         // Try dimension-level match first (most precise)
         const followUp = buildFollowUpForDimension(id, detected, draftReview, rating);
         if (followUp && !answeredSet.has(followUp.topic.toLowerCase())) {
+          // Override with LLM-generated question if available
+          if (llmResult.question) followUp.question = llmResult.question;
+          if (llmResult.rationale) followUp.rationale = llmResult.rationale;
           return NextResponse.json(followUp);
         }
 
@@ -111,13 +145,20 @@ Rules:
         const coarseTopics = getCoarseTopics(id);
         if (coarseTopics.includes(detected) && !answeredSet.has(detected)) {
           const topicFollowUp = buildFollowUpForTopic(id, detected, draftReview, rating);
-          if (topicFollowUp) return NextResponse.json(topicFollowUp);
+          if (topicFollowUp) {
+            if (llmResult.question) topicFollowUp.question = llmResult.question;
+            if (llmResult.rationale) topicFollowUp.rationale = llmResult.rationale;
+            return NextResponse.json(topicFollowUp);
+          }
         }
       }
 
       // LLM said "general" or no pipeline match — return general question
       const general = getGeneralFollowUp(draftReview, rating);
-      if (general) return NextResponse.json(general);
+      if (general) {
+        if (llmResult.question && detected === "general") general.question = llmResult.question;
+        return NextResponse.json(general);
+      }
     } catch {
       // LLM failed — try general fallback
       const general = getGeneralFollowUp(draftReview, rating);
