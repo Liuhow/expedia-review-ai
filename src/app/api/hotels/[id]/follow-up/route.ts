@@ -5,6 +5,7 @@ import { getHotelById } from "@/lib/data-store";
 import {
   getInitialFollowUps,
   getFollowUpContext,
+  buildKeywordFollowUp,
 } from "@/lib/pipeline-followup";
 
 function getClient(): OpenAI | null {
@@ -89,19 +90,12 @@ export async function POST(req: Request, { params }: { params: Promise<{ id: str
     return NextResponse.json({ followUps });
   }
 
-  // ── Mode: draft — ALWAYS use LLM for context-aware follow-up ──
+  // ── Mode: draft — use LLM for context-aware follow-up, keyword fallback if no API key ──
   const client = getClient();
   if (!client) {
-    // No API key — use basic pipeline fallback
-    const fallback = getInitialFollowUps(id, 1, rating);
-    if (fallback.length > 0) return NextResponse.json(fallback[0]);
-    return NextResponse.json({
-      topic: "overall",
-      question: "What stood out during your stay?",
-      rationale: "Help future guests with details",
-      quickReplies: ["Great room", "Friendly staff", "Good location", "Room issues", "Poor service", "Overpriced"],
-      negativeChips: ["Room issues", "Poor service", "Overpriced"],
-    });
+    // No API key — use keyword-based matching (considers user input)
+    const result = buildKeywordFollowUp(id, draftReview, rating, answeredTopics);
+    return NextResponse.json(result);
   }
 
   try {
@@ -153,21 +147,10 @@ Generate the best follow-up question.`;
       });
     }
 
-    // LLM returned something unparseable — use pipeline fallback
-    const fallback = getInitialFollowUps(id, 1, rating);
-    if (fallback.length > 0) return NextResponse.json(fallback[0]);
+    // LLM returned something unparseable — use keyword fallback
+    return NextResponse.json(buildKeywordFollowUp(id, draftReview, rating, answeredTopics));
   } catch {
-    // LLM call failed — use pipeline fallback
-    const fallback = getInitialFollowUps(id, 1, rating);
-    if (fallback.length > 0) return NextResponse.json(fallback[0]);
+    // LLM call failed — use keyword fallback
+    return NextResponse.json(buildKeywordFollowUp(id, draftReview, rating, answeredTopics));
   }
-
-  // Ultimate fallback — always return something
-  return NextResponse.json({
-    topic: "overall",
-    question: "What else would you like to share about your stay?",
-    rationale: "Your details help future guests",
-    quickReplies: ["Great room", "Friendly staff", "Good location", "Room issues", "Poor service", "Needs improvement"],
-    negativeChips: ["Room issues", "Poor service", "Needs improvement"],
-  });
 }

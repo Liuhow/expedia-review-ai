@@ -191,6 +191,128 @@ export function getPipelineIssuesForLLM(hotelId: string) {
   return { issues: result };
 }
 
+/* ───── Keyword-based follow-up (no LLM fallback) ───── */
+
+const TOPIC_KEYWORDS: Record<string, string[]> = {
+  room: ["room", "bed", "mattress", "pillow", "bathroom", "shower", "toilet", "bathtub", "sink", "view", "balcony", "AC", "air conditioning", "suite", "closet", "minibar"],
+  service: ["staff", "service", "check-in", "checkin", "front desk", "reception", "concierge", "housekeeping", "bellman", "porter"],
+  breakfast: ["breakfast", "buffet", "morning meal", "coffee", "eggs", "pastry", "cereal", "omelette"],
+  pool: ["pool", "swimming", "lounger", "jacuzzi", "hot tub", "waterslide"],
+  parking: ["parking", "garage", "car", "valet"],
+  location: ["location", "area", "neighborhood", "transport", "walk", "nearby", "downtown", "beach", "station", "airport", "shuttle"],
+  wifi: ["wifi", "wi-fi", "internet", "connection", "signal"],
+  facilities: ["gym", "spa", "fitness", "elevator", "lobby", "laundry", "amenities", "sauna"],
+  dining: ["restaurant", "bar", "food", "dinner", "lunch", "dining", "menu", "meal", "cuisine"],
+};
+
+const POS_WORDS = new Set(["great", "good", "nice", "love", "loved", "amazing", "excellent", "wonderful", "fantastic", "perfect", "beautiful", "clean", "comfortable", "friendly", "helpful", "best", "enjoyed", "spacious", "recommend", "happy", "pleasant", "awesome", "delicious"]);
+const NEG_WORDS = new Set(["bad", "terrible", "awful", "dirty", "noisy", "rude", "slow", "small", "uncomfortable", "disappointing", "worst", "horrible", "poor", "broken", "old", "cold", "hot", "smelly", "crowded", "overpriced", "expensive", "unfriendly", "disgusting"]);
+
+/**
+ * Keyword-based follow-up (no LLM needed). Used when OPENAI_API_KEY is not available.
+ * Detects user's topic from text and returns matching follow-up with appropriate chips.
+ */
+export function buildKeywordFollowUp(
+  hotelId: string,
+  draftReview: string,
+  rating: number = 0,
+  answeredTopics: string[] = [],
+): PipelineFollowUpResult | null {
+  const lower = draftReview.toLowerCase();
+  const sentences = lower.split(/[.!?]+/).filter(Boolean);
+  const lastPart = sentences.length > 0 ? sentences[sentences.length - 1] : lower;
+  const answeredSet = new Set(answeredTopics.map((t) => t.toLowerCase()));
+
+  // Detect sentiment
+  const posCount = [...POS_WORDS].filter((w) => lastPart.includes(w)).length;
+  const negCount = [...NEG_WORDS].filter((w) => lastPart.includes(w)).length;
+  let sentiment: "positive" | "negative" | "neutral" = "neutral";
+  if (negCount > posCount) sentiment = "negative";
+  else if (posCount > negCount) sentiment = "positive";
+  else if (rating >= 8) sentiment = "positive";
+  else if (rating <= 4 && rating > 0) sentiment = "negative";
+
+  // Detect topic from last sentence
+  let bestTopic: string | null = null;
+  let bestScore = 0;
+  for (const [topic, keywords] of Object.entries(TOPIC_KEYWORDS)) {
+    if (answeredSet.has(topic)) continue;
+    const score = keywords.filter((kw) => lastPart.includes(kw)).length;
+    if (score > bestScore) {
+      bestScore = score;
+      bestTopic = topic;
+    }
+  }
+
+  // If topic found → ask about it
+  if (bestTopic) {
+    const chips = getDefaultChips(bestTopic, sentiment);
+    const qMap: Record<string, Record<string, string>> = {
+      positive: {
+        room: "What stood out about the room?", service: "What made the service great?",
+        breakfast: "What did you enjoy about breakfast?", pool: "What did you enjoy about the pool?",
+        parking: "What made parking convenient?", location: "What's great about the location?",
+        wifi: "Was the WiFi fast enough?", facilities: "Which facilities impressed you?",
+        dining: "What stood out about the dining?",
+      },
+      negative: {
+        room: "What was the main issue with the room?", service: "What went wrong with the service?",
+        breakfast: "What was the issue with breakfast?", pool: "What was wrong with the pool?",
+        parking: "What was the parking problem?", location: "What didn't work about the location?",
+        wifi: "How did the WiFi fall short?", facilities: "What was the issue with facilities?",
+        dining: "What was the issue with dining?",
+      },
+      neutral: {
+        room: "How would you rate the room?", service: "How was the staff and service?",
+        breakfast: "How would you rate the breakfast?", pool: "How was the pool area?",
+        parking: "How was the parking?", location: "How convenient was the location?",
+        wifi: "How was the WiFi?", facilities: "How were the hotel facilities?",
+        dining: "How was the food?",
+      },
+    };
+    return {
+      topic: bestTopic,
+      question: qMap[sentiment][bestTopic] ?? `How was the ${bestTopic}?`,
+      rationale: "",
+      ...chips,
+      _isMultiSelect: true,
+    };
+  }
+
+  // No topic matched → return highest priority uncovered issue
+  const issues = getIssuesForHotel(hotelId);
+  const coveredTopics = new Set<string>();
+  for (const [topic, keywords] of Object.entries(TOPIC_KEYWORDS)) {
+    if (keywords.some((kw) => lower.includes(kw))) coveredTopics.add(topic);
+  }
+
+  for (const issue of issues) {
+    const coarse = DIMENSION_TO_COARSE[issue.dimension] || issue.dimension;
+    if (coveredTopics.has(coarse) || answeredSet.has(coarse)) continue;
+    const label = issue.dimension_label || issue.dimension;
+    return {
+      topic: coarse,
+      question: `How was the ${label}?`,
+      rationale: "Few guests mentioned this — your input helps.",
+      ...getDefaultChips(coarse, sentiment),
+      _pipelineDimension: issue.dimension,
+      _issueType: issue.issue_type,
+      _evidence: issue.evidence_a,
+      _isMultiSelect: true,
+    };
+  }
+
+  // Everything covered → general question
+  return {
+    topic: "overall",
+    question: "Anything else you'd like to share?",
+    rationale: "",
+    quickReplies: ["Great room", "Friendly staff", "Good location", "Room issues", "Poor service", "Needs improvement"],
+    negativeChips: ["Room issues", "Poor service", "Needs improvement"],
+    _isMultiSelect: true,
+  };
+}
+
 /* ───── Exports kept for backward compatibility ───── */
 
 export function getCoarseTopics(hotelId: string): string[] {
