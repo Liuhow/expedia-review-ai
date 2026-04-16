@@ -11,6 +11,10 @@ const hotelImages: Record<string, string> = {
 	"ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80",
 	"fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
 	"823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df": "https://images.unsplash.com/photo-1555992336-03a23c7b20ee?w=800&q=80",
+	"a036cbe1d9fbf9cb6e66eb66ed31e100c5f30ea4d24e42e2728c0e93f7b075f2": "https://images.unsplash.com/photo-1596436889106-be35e843f974?w=800&q=80",
+	"3216b1b7885bffdb18eb2bc4bbc94814cb3ae35029ea04a8398d3e6b7f67da7c": "https://images.unsplash.com/photo-1625244724120-1fd1d34d00f6?w=800&q=80",
+	"f2d8d9557208d58558b9a2ee2a22fc5cda2eb698b1b00df68b09b61879bf4fdb": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+	"7d027ef72c02eaa1e3cb36034be5f0284e8dab6c93d76e61ca3d0b2c60b4cbb4": "https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?w=800&q=80",
 };
 
 /* ── Gallery thumbnails (4 per hotel) ── */
