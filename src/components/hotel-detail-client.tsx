@@ -39,8 +39,23 @@ function cleanHtml(text: string) {
   return text.replace(/<\/?[^>]+(>|$)/g, "").replace(/\\n/g, " ").trim();
 }
 
-/** Flatten policy arrays that may contain stringified JSON arrays, e.g. ['["a","b"]'] → ["a","b"] */
+/** Flatten policy arrays that may contain stringified JSON arrays.
+ *  Handles cases where JSON is split across multiple array items:
+ *  e.g. ['["a","b"', 'c","d"]'] → ["a","b","c","d"]
+ */
 function flattenPolicyItems(items: string[]): string[] {
+  // Strategy 1: Try joining all items and parsing as one JSON array
+  const joined = items.join(",").trim();
+  if (joined.startsWith("[")) {
+    try {
+      const parsed = JSON.parse(joined);
+      if (Array.isArray(parsed)) {
+        return parsed.map((p: unknown) => cleanHtml(String(p))).filter(Boolean);
+      }
+    } catch { /* not valid JSON when joined */ }
+  }
+
+  // Strategy 2: Try each item individually
   const result: string[] = [];
   for (const item of items) {
     const trimmed = item.trim();
@@ -48,12 +63,16 @@ function flattenPolicyItems(items: string[]): string[] {
       try {
         const parsed = JSON.parse(trimmed);
         if (Array.isArray(parsed)) {
-          for (const p of parsed) result.push(cleanHtml(String(p)));
+          for (const p of parsed) {
+            const cleaned = cleanHtml(String(p));
+            if (cleaned) result.push(cleaned);
+          }
           continue;
         }
-      } catch { /* not JSON, treat as regular string */ }
+      } catch { /* not JSON */ }
     }
-    const cleaned = cleanHtml(trimmed);
+    // Strip leading/trailing brackets and quotes from broken JSON fragments
+    const cleaned = cleanHtml(trimmed.replace(/^\[?"?|"?\]?$/g, ""));
     if (cleaned) result.push(cleaned);
   }
   return result;
@@ -271,12 +290,15 @@ function OverviewTab({ hotel, reviewCount, reviews }: { hotel: HotelRecord; revi
           {/* About this property */}
           <h2 className="text-[22px] font-bold text-slate-900">About this property</h2>
           <p className="mt-4 text-[15px] leading-7 text-slate-600">
-            {hotel.description
-              ?.replace(/\|MASK\|/g, "")
-              .replace(/<br\s*\/?>/gi, " ")
-              .replace(/<\/?p>/gi, " ")
-              .replace(/\s{2,}/g, " ")
-              .trim()}
+            {(() => {
+              const desc = hotel.description
+                ?.replace(/\|MASK\|/g, "")
+                .replace(/<br\s*\/?>/gi, " ")
+                .replace(/<\/?p>/gi, " ")
+                .replace(/\s{2,}/g, " ")
+                .trim() || "";
+              return desc.charAt(0).toUpperCase() + desc.slice(1);
+            })()}
           </p>
 
           {/* Amenities as inline chips */}
