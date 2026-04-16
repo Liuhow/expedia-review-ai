@@ -64,9 +64,10 @@ export function SmartFollowupSidebar({
 
       recognition.onend = () => {
         setPhase("chips");
+        // Put transcript into text input for review/edit before submitting
         setTranscript((t) => {
-          if (t.trim() && followUpData) {
-            onAnswered(t.trim(), followUpData.topic, followUpData.question);
+          if (t.trim()) {
+            setTextInput(t.trim());
           }
           return t;
         });
