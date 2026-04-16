@@ -111,11 +111,11 @@ function getAspectChipsRaw(coarseTopic: string, sentiment: Sentiment = "neutral"
   let chips: string[];
   let negSet: string[];
   if (sentiment === "positive") {
-    chips = [...pos.slice(0, 4), ...neg.slice(0, 2)];
-    negSet = neg.slice(0, 2);
+    chips = pos.slice(0, 6);
+    negSet = [];
   } else if (sentiment === "negative") {
-    chips = [...pos.slice(0, 2), ...neg.slice(0, 4)];
-    negSet = neg.slice(0, 4);
+    chips = neg.slice(0, 6);
+    negSet = neg.slice(0, 6);
   } else {
     chips = [...pos.slice(0, 3), ...neg.slice(0, 3)];
     negSet = neg.slice(0, 3);
