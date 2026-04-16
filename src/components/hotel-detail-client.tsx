@@ -188,11 +188,14 @@ export function HotelDetailClient({ hotel }: { hotel: HotelRecord }) {
         </section>
 
         {/* ── Tab Navigation ── */}
-        <nav className="mt-8 flex border-b border-slate-200">
+        <nav className="mt-8 flex border-b border-slate-200 sticky top-0 bg-white z-10">
           {tabs.map((tab) => (
             <button
               key={tab.key}
-              onClick={() => setActiveTab(tab.key)}
+              onClick={() => {
+                setActiveTab(tab.key);
+                document.getElementById(`section-${tab.key}`)?.scrollIntoView({ behavior: "smooth" });
+              }}
               className={`relative px-6 py-3 text-sm font-semibold transition ${
                 activeTab === tab.key
                   ? "text-[#1668e3]"
@@ -207,14 +210,14 @@ export function HotelDetailClient({ hotel }: { hotel: HotelRecord }) {
           ))}
         </nav>
 
-        {/* ── Tab Content ── */}
-        <div className="py-8">
-          {activeTab === "overview" && (
-            <OverviewTab hotel={hotel} reviewCount={reviewCount} reviews={reviews} />
-          )}
-          {activeTab === "policies" && (
-            <PoliciesTab hotel={hotel} />
-          )}
+        {/* ── Overview Section ── */}
+        <div id="section-overview" className="py-8">
+          <OverviewTab hotel={hotel} reviewCount={reviewCount} reviews={reviews} />
+        </div>
+
+        {/* ── Policies Section ── */}
+        <div id="section-policies" className="py-8 border-t border-slate-100">
+          <PoliciesTab hotel={hotel} />
         </div>
       </div>
     </main>
@@ -442,108 +445,92 @@ function OverviewTab({ hotel, reviewCount, reviews }: { hotel: HotelRecord; revi
    Policies Tab
    ══════════════════════════════════════════ */
 
-function PolicySection({ icon, title, items }: { icon: React.ReactNode; title: string; items: string[] }) {
+function PolicyCard({ icon, title, children }: { icon: React.ReactNode; title: string; children: React.ReactNode }) {
+  return (
+    <div className="rounded-xl border border-slate-200 bg-white p-5">
+      <div className="flex items-center gap-3 mb-4">
+        <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-50 text-blue-500">
+          {icon}
+        </div>
+        <h3 className="text-base font-bold text-slate-900">{title}</h3>
+      </div>
+      {children}
+    </div>
+  );
+}
+
+function PolicyBulletList({ items }: { items: string[] }) {
   const flat = flattenPolicyItems(items);
   if (flat.length === 0) return null;
   return (
-    <div className="py-6 first:pt-0">
-      <div className="flex items-center gap-3">
-        <span className="text-slate-400">{icon}</span>
-        <h3 className="text-lg font-bold text-slate-900">{title}</h3>
-      </div>
-      <ul className="mt-4 space-y-2.5 pl-10">
-        {flat.map((item, i) => (
-          <li key={i} className="flex items-start gap-2 text-[15px] text-slate-600">
-            <span className="mt-1.5 h-1 w-1 flex-shrink-0 rounded-full bg-slate-400" />
-            {item}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className="space-y-2">
+      {flat.map((item, i) => (
+        <li key={i} className="flex items-start gap-2.5 text-sm text-slate-600 leading-relaxed">
+          <span className="mt-2 h-1 w-1 flex-shrink-0 rounded-full bg-slate-400" />
+          {item.charAt(0).toUpperCase() + item.slice(1)}
+        </li>
+      ))}
+    </ul>
   );
 }
 
 function PoliciesTab({ hotel }: { hotel: HotelRecord }) {
   return (
     <div className="max-w-3xl">
-      <h2 className="text-[22px] font-bold text-slate-900">Policies</h2>
+      <h2 className="text-[22px] font-bold text-slate-900 mb-6">Policies</h2>
 
-      {/* Check-in */}
-      <div className="mt-6 divide-y divide-slate-100">
-        <div className="py-6">
-          <div className="flex items-center gap-3">
-            <span className="text-slate-400"><Clock className="h-5 w-5" /></span>
-            <h3 className="text-lg font-bold text-slate-900">Check-in</h3>
-          </div>
-          <div className="mt-4 pl-10">
-            <div className="flex items-center gap-8">
-              <div>
-                <div className="text-xs font-semibold uppercase tracking-wider text-slate-400">Start time</div>
-                <div className="mt-1 text-lg font-bold text-slate-900">{hotel.checkIn.startTime ?? "3:00 PM"}</div>
-              </div>
-              {hotel.checkIn.endTime && (
-                <div>
-                  <div className="text-xs font-semibold uppercase tracking-wider text-slate-400">End time</div>
-                  <div className="mt-1 text-lg font-bold text-slate-900">{hotel.checkIn.endTime}</div>
-                </div>
-              )}
+      <div className="grid gap-4 sm:grid-cols-2">
+        {/* Check-in */}
+        <PolicyCard icon={<Clock className="h-5 w-5" />} title="Check-in">
+          <div className="flex items-center gap-6 mb-3">
+            <div>
+              <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">From</div>
+              <div className="mt-0.5 text-lg font-bold text-slate-900">{hotel.checkIn.startTime ?? "3:00 PM"}</div>
             </div>
-            {hotel.checkIn.instructions.length > 0 && (() => {
-              const flat = flattenPolicyItems(hotel.checkIn.instructions);
-              return flat.length > 0 ? (
-                <ul className="mt-4 space-y-2">
-                  {flat.map((inst, i) => (
-                    <li key={i} className="flex items-start gap-2 text-[15px] text-slate-600">
-                      <span className="mt-1.5 h-1 w-1 flex-shrink-0 rounded-full bg-slate-400" />
-                      {inst}
-                    </li>
-                  ))}
-                </ul>
-              ) : null;
-            })()}
+            {hotel.checkIn.endTime && (
+              <div>
+                <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">Until</div>
+                <div className="mt-0.5 text-lg font-bold text-slate-900">{hotel.checkIn.endTime}</div>
+              </div>
+            )}
           </div>
-        </div>
+          <PolicyBulletList items={hotel.checkIn.instructions} />
+        </PolicyCard>
 
         {/* Check-out */}
-        <div className="py-6">
-          <div className="flex items-center gap-3">
-            <span className="text-slate-400"><CreditCard className="h-5 w-5" /></span>
-            <h3 className="text-lg font-bold text-slate-900">Check-out</h3>
+        <PolicyCard icon={<CreditCard className="h-5 w-5" />} title="Check-out">
+          <div className="mb-3">
+            <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">Before</div>
+            <div className="mt-0.5 text-lg font-bold text-slate-900">{hotel.checkOut.time ?? "11:00 AM"}</div>
           </div>
-          <div className="mt-4 pl-10">
-            <div className="text-lg font-bold text-slate-900">{hotel.checkOut.time ?? "11:00 AM"}</div>
-            {hotel.checkOut.policy.length > 0 && (() => {
-              const flat = flattenPolicyItems(hotel.checkOut.policy);
-              return flat.length > 0 ? (
-                <ul className="mt-4 space-y-2">
-                  {flat.map((p, i) => (
-                    <li key={i} className="flex items-start gap-2 text-[15px] text-slate-600">
-                      <span className="mt-1.5 h-1 w-1 flex-shrink-0 rounded-full bg-slate-400" />
-                      {p}
-                    </li>
-                  ))}
-                </ul>
-              ) : null;
-            })()}
-          </div>
-        </div>
-
-        <PolicySection
-          icon={<PawPrint className="h-5 w-5" />}
-          title="Pet policy"
-          items={hotel.policies.pet}
-        />
-        <PolicySection
-          icon={<Baby className="h-5 w-5" />}
-          title="Children and extra beds"
-          items={hotel.policies.childrenAndExtraBed}
-        />
-        <PolicySection
-          icon={<AlertTriangle className="h-5 w-5" />}
-          title="Important information"
-          items={hotel.policies.knowBeforeYouGo}
-        />
+          <PolicyBulletList items={hotel.checkOut.policy} />
+        </PolicyCard>
       </div>
+
+      <div className="grid gap-4 sm:grid-cols-2 mt-4">
+        {/* Pet policy */}
+        {hotel.policies.pet.length > 0 && (
+          <PolicyCard icon={<PawPrint className="h-5 w-5" />} title="Pet policy">
+            <PolicyBulletList items={hotel.policies.pet} />
+          </PolicyCard>
+        )}
+
+        {/* Children */}
+        {hotel.policies.childrenAndExtraBed.length > 0 && (
+          <PolicyCard icon={<Baby className="h-5 w-5" />} title="Children & extra beds">
+            <PolicyBulletList items={hotel.policies.childrenAndExtraBed} />
+          </PolicyCard>
+        )}
+      </div>
+
+      {/* Important info — full width */}
+      {hotel.policies.knowBeforeYouGo.length > 0 && (
+        <div className="mt-4">
+          <PolicyCard icon={<AlertTriangle className="h-5 w-5" />} title="Important information">
+            <PolicyBulletList items={hotel.policies.knowBeforeYouGo} />
+          </PolicyCard>
+        </div>
+      )}
     </div>
   );
 }
