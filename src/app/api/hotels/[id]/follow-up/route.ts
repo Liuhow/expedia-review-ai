@@ -96,11 +96,14 @@ Return JSON with these fields:
 - "dimension": the matched dimension name from the available list (EXACTLY as listed), or "general" if none fit
 - "question": a natural, specific follow-up question (max 15 words). For user-centric, ask about what THEY mentioned. For pipeline-driven, introduce the gap topic naturally.
 - "rationale": one short sentence explaining why this question helps (max 15 words)
+- "chips": array of 6 short (1-3 word) quick-reply options that DIRECTLY answer the question. These must be specific to the question, NOT generic.
 
 Rules:
 - Semantic matching: "breakfast" → "restaurant", "shuttle" → "location", "noisy" → "noise level", "hot room" → "air conditioning"
 - If the review already covers a dimension, skip it
 - Keep questions conversational and easy to answer
+- Chips MUST be relevant answers to YOUR question. E.g. if question is "What was the issue with breakfast?" → chips like "Limited options", "Not fresh", "Long wait", "Cold food", "Crowded", "Overpriced". If question is "How was the shuttle service?" → "On time", "Frequent", "Long wait", "Unreliable", "Comfortable", "Hard to find"
+- If user sentiment is negative, chips should be mostly negative issues. If positive, chips should be positive aspects.
 - Return ONLY valid JSON, nothing else`,
           },
           {
@@ -120,25 +123,35 @@ Generate the best follow-up.`,
       });
 
       const raw = response.choices[0]?.message?.content?.trim() || "";
-      let llmResult: { strategy?: string; dimension?: string; question?: string; rationale?: string } = {};
+      let llmResult: { strategy?: string; dimension?: string; question?: string; rationale?: string; chips?: string[] } = {};
       try {
-        // Parse JSON, handling markdown code blocks
         const jsonStr = raw.replace(/^```json?\s*/, "").replace(/\s*```$/, "");
         llmResult = JSON.parse(jsonStr);
       } catch {
-        // Fallback: treat as dimension name (backward compat)
         llmResult = { dimension: raw.toLowerCase(), strategy: "pipeline_driven" };
       }
 
       const detected = (llmResult.dimension || "general").toLowerCase();
+      const llmChips = Array.isArray(llmResult.chips) && llmResult.chips.length > 0 ? llmResult.chips : null;
+
+      // Helper: apply LLM overrides (question, rationale, chips) to a follow-up result
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const applyLLMOverrides = (fu: any) => {
+        if (llmResult.question) fu.question = llmResult.question;
+        if (llmResult.rationale) fu.rationale = llmResult.rationale;
+        if (llmChips) {
+          fu.quickReplies = llmChips;
+          // Determine negative chips: if user sentiment is negative, all chips are negative
+          const sentimentNeg = draftReview.toLowerCase().match(/terrible|bad|awful|dirty|noisy|rude|slow|uncomfortable|disappointing|worst|horrible|poor|broken|disgusting|issue|problem/);
+          fu.negativeChips = sentimentNeg ? llmChips : [];
+        }
+      };
 
       if (detected !== "general") {
-        // Try dimension-level match first (most precise)
+        // Try dimension-level match first
         const followUp = buildFollowUpForDimension(id, detected, draftReview, rating);
         if (followUp && !answeredSet.has(followUp.topic.toLowerCase())) {
-          // Override with LLM-generated question if available
-          if (llmResult.question) followUp.question = llmResult.question;
-          if (llmResult.rationale) followUp.rationale = llmResult.rationale;
+          applyLLMOverrides(followUp);
           return NextResponse.json(followUp);
         }
 
@@ -147,17 +160,16 @@ Generate the best follow-up.`,
         if (coarseTopics.includes(detected) && !answeredSet.has(detected)) {
           const topicFollowUp = buildFollowUpForTopic(id, detected, draftReview, rating);
           if (topicFollowUp) {
-            if (llmResult.question) topicFollowUp.question = llmResult.question;
-            if (llmResult.rationale) topicFollowUp.rationale = llmResult.rationale;
+            applyLLMOverrides(topicFollowUp);
             return NextResponse.json(topicFollowUp);
           }
         }
       }
 
-      // LLM said "general" or no pipeline match — return general question
+      // LLM said "general" or no pipeline match
       const general = getGeneralFollowUp(draftReview, rating);
       if (general) {
-        if (llmResult.question && detected === "general") general.question = llmResult.question;
+        if (detected === "general") applyLLMOverrides(general);
         return NextResponse.json(general);
       }
     } catch {
