@@ -250,7 +250,14 @@ function OverviewTab({ hotel, reviewCount, reviews }: { hotel: HotelRecord; revi
         <div>
           {/* About this property */}
           <h2 className="text-[22px] font-bold text-slate-900">About this property</h2>
-          <p className="mt-4 text-[15px] leading-7 text-slate-600">{hotel.description}</p>
+          <p className="mt-4 text-[15px] leading-7 text-slate-600">
+            {hotel.description
+              ?.replace(/\|MASK\|/g, "")
+              .replace(/<br\s*\/?>/gi, " ")
+              .replace(/<\/?p>/gi, " ")
+              .replace(/\s{2,}/g, " ")
+              .trim()}
+          </p>
 
           {/* Amenities as inline chips */}
           {hotel.popularAmenities.length > 0 && (
@@ -258,7 +265,7 @@ function OverviewTab({ hotel, reviewCount, reviews }: { hotel: HotelRecord; revi
               {hotel.popularAmenities.slice(0, 10).map((a) => (
                 <span key={a} className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 px-3 py-1.5 text-sm text-slate-600">
                   <span className="text-slate-400">{getIcon(a)}</span>
-                  {a}
+                  {a.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
                 </span>
               ))}
               {hotel.popularAmenities.length > 10 && (

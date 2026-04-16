@@ -8,3 +8,11 @@ pnpm-debug.log*
 *.DS_Store
 .claude/settings.local.json
 ~
+pipeline/data/Reviews_PROC.csv
+pipeline/data/reviews_clean.csv
+pipeline/data/Description_PROC.csv
+pipeline/reviews_analyzed.xlsx
+pipeline/data/review_labels.json
+pipeline/data/issues.json
+pipeline/data/hotels.json
+tsconfig.tsbuildinfo
