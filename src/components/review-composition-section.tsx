@@ -367,9 +367,9 @@ export function ReviewCompositionSection({
   const displayRating = hoverRating || rating;
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
       {/* ── Left: Star rating + Review textarea ── */}
-      <div className="lg:col-span-3 space-y-4">
+      <div className="space-y-4">
         {/* Overall rating */}
         <div>
           <label className="block text-sm font-semibold text-slate-900 mb-2">
@@ -531,23 +531,23 @@ export function ReviewCompositionSection({
       </div>
 
       {/* ── Right: Follow-up sidebar ── */}
-      <div className="lg:col-span-2">
+      <div>
         <div className="sticky top-6">
           {!hasText && !activeInitialQuestion && initialFollowUps.length > 0 ? (
             /* Empty state: show top 3 issue questions as clickable prompts */
-            <div className="rounded-xl border border-slate-200 bg-gradient-to-b from-slate-50/80 to-white px-3.5 py-3 space-y-2">
-              <div className="flex items-center gap-1">
-                <Sparkles className="h-3 w-3 text-blue-400" />
-                <span className="text-[11px] font-medium text-slate-400">
+            <div className="rounded-xl border border-slate-200 bg-gradient-to-b from-slate-50/80 to-white px-5 py-5 space-y-3">
+              <div className="flex items-center gap-1.5">
+                <Sparkles className="h-4 w-4 text-blue-400" />
+                <span className="text-xs font-medium text-slate-400">
                   What would you like to share?
                 </span>
               </div>
-              <div className="space-y-1.5">
+              <div className="space-y-2">
                 {initialFollowUps.map((fu, idx) => (
                   <button
                     key={idx}
                     onClick={() => handleInitialQuestionClick(fu)}
-                    className="w-full text-left px-3 py-2 rounded-lg border border-slate-200 bg-white hover:border-blue-300 hover:bg-blue-50/50 transition text-sm text-slate-700 hover:text-blue-700"
+                    className="w-full text-left px-4 py-3 rounded-lg border border-slate-200 bg-white hover:border-blue-300 hover:bg-blue-50/50 transition text-base text-slate-700 hover:text-blue-700 font-medium"
                   >
                     {fu.question}
                   </button>

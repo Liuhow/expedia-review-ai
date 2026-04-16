@@ -165,54 +165,54 @@ export function SmartFollowupSidebar({
 
   // ── Main: multi-select aspect chips + text input ──
   return (
-    <div className="rounded-xl border border-slate-200 bg-gradient-to-b from-slate-50/80 to-white px-3.5 py-3 space-y-2">
+    <div className="rounded-xl border border-slate-200 bg-gradient-to-b from-slate-50/80 to-white px-5 py-5 space-y-3">
       {/* Header */}
       <div className="flex items-center justify-between">
-        <div className="flex items-center gap-1">
-          <Sparkles className="h-3 w-3 text-blue-400" />
-          <span className="text-[11px] font-medium text-slate-400">
+        <div className="flex items-center gap-1.5">
+          <Sparkles className="h-4 w-4 text-blue-400" />
+          <span className="text-xs font-medium text-slate-400">
             Optional — helps future guests
           </span>
         </div>
         {onDismiss && (
           <button
             onClick={onDismiss}
-            className="p-0.5 rounded-full hover:bg-slate-100 transition text-slate-300 hover:text-slate-500"
+            className="p-1 rounded-full hover:bg-slate-100 transition text-slate-300 hover:text-slate-500"
             title="Skip"
           >
-            <X className="h-3 w-3" />
+            <X className="h-4 w-4" />
           </button>
         )}
       </div>
 
       {/* Question */}
-      <p className="text-sm font-medium text-slate-700 leading-snug">
+      <p className="text-base font-semibold text-slate-800 leading-snug">
         {followUpData.question}
       </p>
 
       {/* Rationale */}
       {followUpData.rationale && (
-        <p className="text-[10px] text-slate-400 leading-relaxed">
+        <p className="text-xs text-slate-400 leading-relaxed">
           {followUpData.rationale}
         </p>
       )}
 
       {/* Multi-select aspect chips */}
       {followUpData.quickReplies && followUpData.quickReplies.length > 0 && (
-        <div className="flex flex-wrap gap-1">
+        <div className="flex flex-wrap gap-2">
           {followUpData.quickReplies.map((chip) => {
             const isSelected = selected.has(chip);
             return (
               <button
                 key={chip}
                 onClick={() => toggleChip(chip)}
-                className={`inline-flex items-center gap-0.5 px-2 py-1 rounded-full text-xs font-medium border transition ${
+                className={`inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-medium border transition ${
                   isSelected
                     ? "bg-blue-50 border-blue-300 text-blue-700"
                     : "bg-white border-slate-200 text-slate-600 hover:border-slate-300"
                 }`}
               >
-                {isSelected && <Check className="h-2.5 w-2.5" />}
+                {isSelected && <Check className="h-3 w-3" />}
                 {chip}
               </button>
             );
@@ -222,15 +222,15 @@ export function SmartFollowupSidebar({
 
       {/* Negative chip follow-up: ask for reason */}
       {selected.size > 0 && hasNegSelected && (
-        <div className="space-y-1">
-          <p className="text-[11px] font-medium text-slate-500">What happened?</p>
+        <div className="space-y-1.5">
+          <p className="text-xs font-medium text-slate-500">What happened?</p>
           <input
             type="text"
             value={reasonInput}
             onChange={(e) => setReasonInput(e.target.value)}
             onKeyDown={(e) => { if (e.key === "Enter") handleSubmitChips(); }}
             placeholder="e.g. shower was leaking..."
-            className="w-full px-2.5 py-1.5 border border-slate-200 rounded-lg text-xs text-slate-700 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-blue-400 focus:border-blue-400"
+            className="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm text-slate-700 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-blue-400 focus:border-blue-400"
           />
         </div>
       )}
@@ -239,7 +239,7 @@ export function SmartFollowupSidebar({
       {selected.size > 0 && (
         <button
           onClick={handleSubmitChips}
-          className="w-full px-2.5 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold transition"
+          className="w-full px-3 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold transition"
         >
           Add to review
         </button>
@@ -247,7 +247,7 @@ export function SmartFollowupSidebar({
 
       {/* Text input + voice row */}
       {selected.size === 0 && (
-        <div className="flex items-center gap-1.5">
+        <div className="flex items-center gap-2">
           <div className="relative flex-1">
             <input
               type="text"
@@ -255,7 +255,7 @@ export function SmartFollowupSidebar({
               onChange={(e) => setTextInput(e.target.value)}
               onKeyDown={(e) => { if (e.key === "Enter") handleSubmitText(); }}
               placeholder="Type your answer..."
-              className="w-full px-2.5 py-1.5 pr-7 border border-slate-200 rounded-lg text-xs text-slate-700 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-blue-400 focus:border-blue-400"
+              className="w-full px-3 py-2 pr-8 border border-slate-200 rounded-lg text-sm text-slate-700 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-blue-400 focus:border-blue-400"
             />
             {textInput.trim() && (
               <button
