@@ -41,12 +41,13 @@ export async function POST(req: NextRequest) {
       messages: [
         {
           role: "system",
-          content: `You turn a short follow-up answer into ONE natural review sentence. Rules:
+          content: `You polish a hotel guest's follow-up answer into ONE clean review sentence. Rules:
 - Output exactly ONE sentence, no more
 - Write in first person as a hotel guest
-- Keep it natural and concise (under 20 words)
+- ONLY fix grammar, spelling, and awkward phrasing — do NOT add new details or expand
+- Keep the sentence SHORT: maximum 20 words. If the input is long, condense it
 - Do not add information the user didn't provide
-- Do not use overly formal language
+- Do not use overly formal or flowery language
 - Return ONLY the sentence, no quotes, no JSON`,
         },
         {
@@ -70,9 +71,16 @@ export async function POST(req: NextRequest) {
 }
 
 function buildFallbackSentence(topic: string, answer: string): string {
-  const lower = answer.toLowerCase();
-  // If the answer is already a sentence, use it directly
-  if (answer.length > 30) return answer;
+  const lower = answer.toLowerCase().trim();
+  // If the answer is already a decent sentence, just clean it up
+  if (lower.length > 40) {
+    // Truncate to roughly 20 words
+    const words = lower.split(/\s+/);
+    if (words.length > 20) {
+      return words.slice(0, 18).join(" ") + ".";
+    }
+    return answer.endsWith(".") ? answer : answer + ".";
+  }
   // Simple templates
   return `The ${topic} was ${lower}.`;
 }
