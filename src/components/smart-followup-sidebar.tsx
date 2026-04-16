@@ -225,14 +225,45 @@ export function SmartFollowupSidebar({
       {selected.size > 0 && hasNegSelected && (
         <div className="space-y-1.5">
           <p className="text-xs font-medium text-slate-500">What happened?</p>
-          <input
-            type="text"
-            value={reasonInput}
-            onChange={(e) => setReasonInput(e.target.value)}
-            onKeyDown={(e) => { if (e.key === "Enter") handleSubmitChips(); }}
-            placeholder="e.g. shower was leaking..."
-            className="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm text-slate-700 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-blue-400 focus:border-blue-400"
-          />
+          <div className="flex items-center gap-2">
+            <input
+              type="text"
+              value={reasonInput}
+              onChange={(e) => setReasonInput(e.target.value)}
+              onKeyDown={(e) => { if (e.key === "Enter") handleSubmitChips(); }}
+              placeholder="e.g. shower was leaking..."
+              className="flex-1 px-3 py-2 border border-slate-200 rounded-lg text-sm text-slate-700 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-blue-400 focus:border-blue-400"
+            />
+            {voiceSupported && (
+              <button
+                onClick={() => {
+                  if (!recognitionRef.current) return;
+                  setVoiceError(null);
+                  // Use a one-shot recognition for reason input
+                  const sr = recognitionRef.current;
+                  const prevOnResult = sr.onresult;
+                  const prevOnEnd = sr.onend;
+                  sr.onresult = (event: any) => {
+                    let finalText = "";
+                    for (let i = event.resultIndex; i < event.results.length; i++) {
+                      if (event.results[i].isFinal) finalText += event.results[i][0].transcript;
+                    }
+                    const current = finalText || event.results[event.results.length - 1]?.[0]?.transcript || "";
+                    if (current.trim()) setReasonInput((prev) => prev ? prev + " " + current.trim() : current.trim());
+                  };
+                  sr.onend = () => {
+                    sr.onresult = prevOnResult;
+                    sr.onend = prevOnEnd;
+                  };
+                  try { sr.start(); } catch { /* already started */ }
+                }}
+                className="p-1.5 rounded-lg border border-slate-200 bg-white text-slate-400 hover:border-blue-300 hover:text-blue-500 hover:bg-blue-50 transition flex-shrink-0"
+                title="Speak your answer"
+              >
+                <Mic className="h-3.5 w-3.5" />
+              </button>
+            )}
+          </div>
         </div>
       )}
 
