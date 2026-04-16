@@ -10,6 +10,7 @@ import {
   buildFollowUpForTopic,
   buildFollowUpForDimension,
   getGeneralFollowUp,
+  getPipelineIssuesForLLM,
 } from "@/lib/pipeline-followup";
 
 function getClient(): OpenAI | null {

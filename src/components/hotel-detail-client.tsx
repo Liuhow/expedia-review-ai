@@ -39,6 +39,26 @@ function cleanHtml(text: string) {
   return text.replace(/<\/?[^>]+(>|$)/g, "").replace(/\\n/g, " ").trim();
 }
 
+/** Flatten policy arrays that may contain stringified JSON arrays, e.g. ['["a","b"]'] → ["a","b"] */
+function flattenPolicyItems(items: string[]): string[] {
+  const result: string[] = [];
+  for (const item of items) {
+    const trimmed = item.trim();
+    if (trimmed.startsWith("[")) {
+      try {
+        const parsed = JSON.parse(trimmed);
+        if (Array.isArray(parsed)) {
+          for (const p of parsed) result.push(cleanHtml(String(p)));
+          continue;
+        }
+      } catch { /* not JSON, treat as regular string */ }
+    }
+    const cleaned = cleanHtml(trimmed);
+    if (cleaned) result.push(cleaned);
+  }
+  return result;
+}
+
 export function HotelDetailClient({ hotel }: { hotel: HotelRecord }) {
   const [reviewCount, setReviewCount] = useState(hotel.reviewCount);
   const [reviews, setReviews] = useState<ReviewRecord[]>([]);
@@ -401,7 +421,8 @@ function OverviewTab({ hotel, reviewCount, reviews }: { hotel: HotelRecord; revi
    ══════════════════════════════════════════ */
 
 function PolicySection({ icon, title, items }: { icon: React.ReactNode; title: string; items: string[] }) {
-  if (items.length === 0) return null;
+  const flat = flattenPolicyItems(items);
+  if (flat.length === 0) return null;
   return (
     <div className="py-6 first:pt-0">
       <div className="flex items-center gap-3">
@@ -409,16 +430,12 @@ function PolicySection({ icon, title, items }: { icon: React.ReactNode; title: s
         <h3 className="text-lg font-bold text-slate-900">{title}</h3>
       </div>
       <ul className="mt-4 space-y-2.5 pl-10">
-        {items.map((item, i) => {
-          const cleaned = cleanHtml(item);
-          if (!cleaned) return null;
-          return (
-            <li key={i} className="flex items-start gap-2 text-[15px] text-slate-600">
-              <span className="mt-1.5 h-1 w-1 flex-shrink-0 rounded-full bg-slate-400" />
-              {cleaned}
-            </li>
-          );
-        })}
+        {flat.map((item, i) => (
+          <li key={i} className="flex items-start gap-2 text-[15px] text-slate-600">
+            <span className="mt-1.5 h-1 w-1 flex-shrink-0 rounded-full bg-slate-400" />
+            {item}
+          </li>
+        ))}
       </ul>
     </div>
   );
@@ -449,16 +466,19 @@ function PoliciesTab({ hotel }: { hotel: HotelRecord }) {
                 </div>
               )}
             </div>
-            {hotel.checkIn.instructions.length > 0 && (
-              <ul className="mt-4 space-y-2">
-                {hotel.checkIn.instructions.map((inst, i) => (
-                  <li key={i} className="flex items-start gap-2 text-[15px] text-slate-600">
-                    <span className="mt-1.5 h-1 w-1 flex-shrink-0 rounded-full bg-slate-400" />
-                    {cleanHtml(inst)}
-                  </li>
-                ))}
-              </ul>
-            )}
+            {hotel.checkIn.instructions.length > 0 && (() => {
+              const flat = flattenPolicyItems(hotel.checkIn.instructions);
+              return flat.length > 0 ? (
+                <ul className="mt-4 space-y-2">
+                  {flat.map((inst, i) => (
+                    <li key={i} className="flex items-start gap-2 text-[15px] text-slate-600">
+                      <span className="mt-1.5 h-1 w-1 flex-shrink-0 rounded-full bg-slate-400" />
+                      {inst}
+                    </li>
+                  ))}
+                </ul>
+              ) : null;
+            })()}
           </div>
         </div>
 
@@ -470,16 +490,19 @@ function PoliciesTab({ hotel }: { hotel: HotelRecord }) {
           </div>
           <div className="mt-4 pl-10">
             <div className="text-lg font-bold text-slate-900">{hotel.checkOut.time ?? "11:00 AM"}</div>
-            {hotel.checkOut.policy.length > 0 && (
-              <ul className="mt-4 space-y-2">
-                {hotel.checkOut.policy.map((p, i) => (
-                  <li key={i} className="flex items-start gap-2 text-[15px] text-slate-600">
-                    <span className="mt-1.5 h-1 w-1 flex-shrink-0 rounded-full bg-slate-400" />
-                    {cleanHtml(p)}
-                  </li>
-                ))}
-              </ul>
-            )}
+            {hotel.checkOut.policy.length > 0 && (() => {
+              const flat = flattenPolicyItems(hotel.checkOut.policy);
+              return flat.length > 0 ? (
+                <ul className="mt-4 space-y-2">
+                  {flat.map((p, i) => (
+                    <li key={i} className="flex items-start gap-2 text-[15px] text-slate-600">
+                      <span className="mt-1.5 h-1 w-1 flex-shrink-0 rounded-full bg-slate-400" />
+                      {p}
+                    </li>
+                  ))}
+                </ul>
+              ) : null;
+            })()}
           </div>
         </div>
 
