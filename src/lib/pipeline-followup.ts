@@ -344,6 +344,13 @@ export function buildFollowUpFromPipeline(
     return null;
   }
 
+  // If user typed something meaningful but keywords didn't match → let LLM handle it
+  // Only fall to Strategy 2 when input is very short/empty (no clear topic to match)
+  const lastSentence = draftLower.split(/[.!?]+/).filter(Boolean).pop()?.trim() || "";
+  if (lastSentence.length >= 3 && !currentTopic) {
+    return null; // let LLM semantically match
+  }
+
   // Strategy 2: No specific topic detected → find highest-priority uncovered issue
   // Skip topics already answered
   const uncoveredIssue = issues.find((i) => {
