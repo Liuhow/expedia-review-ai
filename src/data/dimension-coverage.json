@@ -1,0 +1,2332 @@
+{
+  "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0": [
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "staff_attitude",
+      "hq_mention_count": 40,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.426,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "location",
+      "hq_mention_count": 75,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.798,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "breakfast",
+      "hq_mention_count": 27,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.287,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "checkin_experience",
+      "hq_mention_count": 4,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.043,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "room_cleanliness",
+      "hq_mention_count": 35,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.372,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "room_size",
+      "hq_mention_count": 6,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.064,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "smell",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.011,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "room_climate",
+      "hq_mention_count": 7,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.074,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "bathroom",
+      "hq_mention_count": 6,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.064,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "room_noise",
+      "hq_mention_count": 12,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.128,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "room_service",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.011,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "bed_comfort",
+      "hq_mention_count": 8,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.085,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "restaurant",
+      "hq_mention_count": 3,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.032,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "decor_renovation",
+      "hq_mention_count": 3,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.032,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "value_for_money",
+      "hq_mention_count": 11,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.117,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "mini-safe",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.011,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "mini-fridge",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.011,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "parking",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.053,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "wifi",
+      "hq_mention_count": 4,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.043,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "laundry",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 94,
+      "mention_rate": 0.021,
+      "is_gap": true
+    }
+  ],
+  "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941": [
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "staff_attitude",
+      "hq_mention_count": 129,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.404,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "room_climate",
+      "hq_mention_count": 17,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.053,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "location",
+      "hq_mention_count": 78,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.245,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "room_size",
+      "hq_mention_count": 30,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.094,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "room_cleanliness",
+      "hq_mention_count": 189,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.592,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "decor_renovation",
+      "hq_mention_count": 22,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.069,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "bed_comfort",
+      "hq_mention_count": 51,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.16,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "breakfast",
+      "hq_mention_count": 31,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.097,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "room_noise",
+      "hq_mention_count": 46,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.144,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "parking",
+      "hq_mention_count": 34,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.107,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "kitchen",
+      "hq_mention_count": 4,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.013,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "checkin_experience",
+      "hq_mention_count": 51,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.16,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "smell",
+      "hq_mention_count": 13,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.041,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "bathroom",
+      "hq_mention_count": 34,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.107,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "restaurant",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.003,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "value_for_money",
+      "hq_mention_count": 37,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.116,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "housekeeping",
+      "hq_mention_count": 4,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.013,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "hot_tub",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.016,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "wifi",
+      "hq_mention_count": 8,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.025,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "entertainment",
+      "hq_mention_count": 7,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.022,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "bar",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.003,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "lobby",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.006,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "outdoor",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.003,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "pool",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.003,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "gym_fitness",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 319,
+      "mention_rate": 0.003,
+      "is_gap": true
+    }
+  ],
+  "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820": [
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "room_size",
+      "hq_mention_count": 6,
+      "hq_total_reviews": 26,
+      "mention_rate": 0.231,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "staff_attitude",
+      "hq_mention_count": 19,
+      "hq_total_reviews": 26,
+      "mention_rate": 0.731,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "decor_renovation",
+      "hq_mention_count": 6,
+      "hq_total_reviews": 26,
+      "mention_rate": 0.231,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "room_cleanliness",
+      "hq_mention_count": 8,
+      "hq_total_reviews": 26,
+      "mention_rate": 0.308,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "breakfast",
+      "hq_mention_count": 6,
+      "hq_total_reviews": 26,
+      "mention_rate": 0.231,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "location",
+      "hq_mention_count": 14,
+      "hq_total_reviews": 26,
+      "mention_rate": 0.538,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "bathroom",
+      "hq_mention_count": 4,
+      "hq_total_reviews": 26,
+      "mention_rate": 0.154,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "room_noise",
+      "hq_mention_count": 4,
+      "hq_total_reviews": 26,
+      "mention_rate": 0.154,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "parking",
+      "hq_mention_count": 6,
+      "hq_total_reviews": 26,
+      "mention_rate": 0.231,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "bed_comfort",
+      "hq_mention_count": 3,
+      "hq_total_reviews": 26,
+      "mention_rate": 0.115,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "restaurant",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 26,
+      "mention_rate": 0.077,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "value_for_money",
+      "hq_mention_count": 3,
+      "hq_total_reviews": 26,
+      "mention_rate": 0.115,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "wifi",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 26,
+      "mention_rate": 0.038,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "lobby",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 26,
+      "mention_rate": 0.038,
+      "is_gap": true
+    }
+  ],
+  "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12": [
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "staff_attitude",
+      "hq_mention_count": 6,
+      "hq_total_reviews": 6,
+      "mention_rate": 1.0,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "location",
+      "hq_mention_count": 3,
+      "hq_total_reviews": 6,
+      "mention_rate": 0.5,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "decor_renovation",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 6,
+      "mention_rate": 0.167,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "room_view",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 6,
+      "mention_rate": 0.333,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "room_cleanliness",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 6,
+      "mention_rate": 0.167,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "bed_comfort",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 6,
+      "mention_rate": 0.333,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "restaurant",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 6,
+      "mention_rate": 0.333,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "breakfast",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 6,
+      "mention_rate": 0.333,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "room_size",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 6,
+      "mention_rate": 0.333,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "kitchen",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 6,
+      "mention_rate": 0.167,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "balcony",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 6,
+      "mention_rate": 0.167,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "value_for_money",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 6,
+      "mention_rate": 0.167,
+      "is_gap": false
+    }
+  ],
+  "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06": [
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "room_cleanliness",
+      "hq_mention_count": 97,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.401,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "breakfast",
+      "hq_mention_count": 68,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.281,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "location",
+      "hq_mention_count": 60,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.248,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "smell",
+      "hq_mention_count": 8,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.033,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "pool",
+      "hq_mention_count": 23,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.095,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "bathroom",
+      "hq_mention_count": 33,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.136,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "decor_renovation",
+      "hq_mention_count": 27,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.112,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "staff_attitude",
+      "hq_mention_count": 113,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.467,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "restaurant",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.004,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "room_size",
+      "hq_mention_count": 22,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.091,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "laundry",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.004,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "value_for_money",
+      "hq_mention_count": 19,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.079,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "checkin_experience",
+      "hq_mention_count": 27,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.112,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "room_noise",
+      "hq_mention_count": 28,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.116,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "cookies",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.008,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "bottled water",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.004,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "wifi",
+      "hq_mention_count": 8,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.033,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "bed_comfort",
+      "hq_mention_count": 24,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.099,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "room_climate",
+      "hq_mention_count": 8,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.033,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "entertainment",
+      "hq_mention_count": 4,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.017,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "bikes",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.004,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "lobby",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.021,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "gym_fitness",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.004,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "parking",
+      "hq_mention_count": 13,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.054,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "business",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.004,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "hot_tub",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.021,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "elevator",
+      "hq_mention_count": 7,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.029,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "housekeeping",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.008,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "room_view",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.004,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "pet_friendly",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.004,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "luggage carts",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.004,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "dog_friendly",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.004,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "kitchen",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 242,
+      "mention_rate": 0.004,
+      "is_gap": true
+    }
+  ],
+  "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df": [
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "location",
+      "hq_mention_count": 366,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.766,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "breakfast",
+      "hq_mention_count": 122,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.255,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "room_cleanliness",
+      "hq_mention_count": 169,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.354,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "staff_attitude",
+      "hq_mention_count": 242,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.506,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "wifi",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.004,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "room_view",
+      "hq_mention_count": 10,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.021,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "bed_comfort",
+      "hq_mention_count": 37,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.077,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "bathroom",
+      "hq_mention_count": 52,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.109,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "decor_renovation",
+      "hq_mention_count": 30,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.063,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "room_size",
+      "hq_mention_count": 81,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.169,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "value_for_money",
+      "hq_mention_count": 44,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.092,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "balcony",
+      "hq_mention_count": 3,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.006,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "checkin_experience",
+      "hq_mention_count": 21,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.044,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "bar",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.01,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "room_climate",
+      "hq_mention_count": 19,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.04,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "restaurant",
+      "hq_mention_count": 17,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.036,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "room_noise",
+      "hq_mention_count": 32,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.067,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "elevator",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.002,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "smell",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.004,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "parking",
+      "hq_mention_count": 4,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.008,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "outdoor",
+      "hq_mention_count": 3,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.006,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "kitchen",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.004,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "shuttle",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.002,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "lobby",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.002,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "housekeeping",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.004,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "room_comfort",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.002,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "gym_fitness",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.004,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "free snacks",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.002,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "mobile phone for directions",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 478,
+      "mention_rate": 0.002,
+      "is_gap": true
+    }
+  ],
+  "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f": [
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "staff_attitude",
+      "hq_mention_count": 59,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.72,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "room_cleanliness",
+      "hq_mention_count": 26,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.317,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "bed_comfort",
+      "hq_mention_count": 13,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.159,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "restaurant",
+      "hq_mention_count": 9,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.11,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "room_size",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.061,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "decor_renovation",
+      "hq_mention_count": 12,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.146,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "bathroom",
+      "hq_mention_count": 4,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.049,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "breakfast",
+      "hq_mention_count": 29,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.354,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "location",
+      "hq_mention_count": 15,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.183,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "room_climate",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.012,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "parking",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.061,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "smell",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.061,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "wifi",
+      "hq_mention_count": 4,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.049,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "value_for_money",
+      "hq_mention_count": 8,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.098,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "bar",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.024,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "fly screen",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.012,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "entertainment",
+      "hq_mention_count": 4,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.049,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "room_noise",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.061,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "checkin_experience",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.024,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "room_service",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 82,
+      "mention_rate": 0.012,
+      "is_gap": true
+    }
+  ],
+  "a036cbe1d9fbf9cba088075d1b4d966ee871df55aa4a58ba0da23c116c499052": [
+    {
+      "hotel_id": "a036cbe1d9fbf9cba088075d1b4d966ee871df55aa4a58ba0da23c116c499052",
+      "dimension": "location",
+      "hq_mention_count": 3,
+      "hq_total_reviews": 6,
+      "mention_rate": 0.5,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "a036cbe1d9fbf9cba088075d1b4d966ee871df55aa4a58ba0da23c116c499052",
+      "dimension": "room_cleanliness",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 6,
+      "mention_rate": 0.333,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "a036cbe1d9fbf9cba088075d1b4d966ee871df55aa4a58ba0da23c116c499052",
+      "dimension": "breakfast",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 6,
+      "mention_rate": 0.167,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "a036cbe1d9fbf9cba088075d1b4d966ee871df55aa4a58ba0da23c116c499052",
+      "dimension": "value_for_money",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 6,
+      "mention_rate": 0.167,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "a036cbe1d9fbf9cba088075d1b4d966ee871df55aa4a58ba0da23c116c499052",
+      "dimension": "staff_attitude",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 6,
+      "mention_rate": 0.167,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "a036cbe1d9fbf9cba088075d1b4d966ee871df55aa4a58ba0da23c116c499052",
+      "dimension": "restaurant",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 6,
+      "mention_rate": 0.167,
+      "is_gap": false
+    }
+  ],
+  "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723": [
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "staff_attitude",
+      "hq_mention_count": 254,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.624,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "lobby",
+      "hq_mention_count": 13,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.032,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "decor_renovation",
+      "hq_mention_count": 51,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.125,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "shuttle",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.002,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "restaurant",
+      "hq_mention_count": 56,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.138,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "value_for_money",
+      "hq_mention_count": 24,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.059,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "location",
+      "hq_mention_count": 90,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.221,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "pool",
+      "hq_mention_count": 66,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.162,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "room_cleanliness",
+      "hq_mention_count": 109,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.268,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "breakfast",
+      "hq_mention_count": 14,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.034,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "hot_tub",
+      "hq_mention_count": 18,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.044,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "room_size",
+      "hq_mention_count": 14,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.034,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "room_view",
+      "hq_mention_count": 33,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.081,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "gym_fitness",
+      "hq_mention_count": 15,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.037,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "elevator",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.005,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "bar",
+      "hq_mention_count": 7,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.017,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "bathroom",
+      "hq_mention_count": 15,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.037,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "bed_comfort",
+      "hq_mention_count": 29,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.071,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "spa",
+      "hq_mention_count": 16,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.039,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "balcony",
+      "hq_mention_count": 9,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.022,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "room_climate",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.012,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "checkin_experience",
+      "hq_mention_count": 26,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.064,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "wifi",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.012,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "smell",
+      "hq_mention_count": 3,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.007,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "golf",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.005,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "outdoor",
+      "hq_mention_count": 7,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.017,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "room_noise",
+      "hq_mention_count": 18,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.044,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "room_service",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.012,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "room_comfort",
+      "hq_mention_count": 3,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.007,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "housekeeping",
+      "hq_mention_count": 7,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.017,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "golf course",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.005,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "entertainment",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.002,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "amenities",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.002,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "kids_pool",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.005,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "coffee shop",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.002,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "parking",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 407,
+      "mention_rate": 0.002,
+      "is_gap": true
+    }
+  ],
+  "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676": [
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "laundry",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 39,
+      "mention_rate": 0.051,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "staff_attitude",
+      "hq_mention_count": 22,
+      "hq_total_reviews": 39,
+      "mention_rate": 0.564,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "room_cleanliness",
+      "hq_mention_count": 22,
+      "hq_total_reviews": 39,
+      "mention_rate": 0.564,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "breakfast",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 39,
+      "mention_rate": 0.128,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "location",
+      "hq_mention_count": 25,
+      "hq_total_reviews": 39,
+      "mention_rate": 0.641,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "room_noise",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 39,
+      "mention_rate": 0.128,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "room_size",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 39,
+      "mention_rate": 0.128,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "bed_comfort",
+      "hq_mention_count": 7,
+      "hq_total_reviews": 39,
+      "mention_rate": 0.179,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "decor_renovation",
+      "hq_mention_count": 7,
+      "hq_total_reviews": 39,
+      "mention_rate": 0.179,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "value_for_money",
+      "hq_mention_count": 3,
+      "hq_total_reviews": 39,
+      "mention_rate": 0.077,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "wifi",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 39,
+      "mention_rate": 0.051,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "room_climate",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 39,
+      "mention_rate": 0.051,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "checkin_experience",
+      "hq_mention_count": 3,
+      "hq_total_reviews": 39,
+      "mention_rate": 0.077,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "refrigerator",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 39,
+      "mention_rate": 0.026,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "bathroom",
+      "hq_mention_count": 3,
+      "hq_total_reviews": 39,
+      "mention_rate": 0.077,
+      "is_gap": false
+    }
+  ],
+  "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9": [
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "parking",
+      "hq_mention_count": 6,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.057,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "value_for_money",
+      "hq_mention_count": 23,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.219,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "location",
+      "hq_mention_count": 55,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.524,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "decor_renovation",
+      "hq_mention_count": 28,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.267,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "room_cleanliness",
+      "hq_mention_count": 37,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.352,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "bathroom",
+      "hq_mention_count": 11,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.105,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "staff_attitude",
+      "hq_mention_count": 37,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.352,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "pool",
+      "hq_mention_count": 13,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.124,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "room_view",
+      "hq_mention_count": 8,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.076,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "balcony",
+      "hq_mention_count": 3,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.029,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "bed_comfort",
+      "hq_mention_count": 8,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.076,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "smell",
+      "hq_mention_count": 6,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.057,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "room_noise",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.048,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "outdoor",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.01,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "room_climate",
+      "hq_mention_count": 11,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.105,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "hot_tub",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.01,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "room_size",
+      "hq_mention_count": 16,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.152,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "kids_pool",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.019,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "kitchen",
+      "hq_mention_count": 9,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.086,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "checkin_experience",
+      "hq_mention_count": 6,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.057,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "restaurant",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.01,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "bar",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 105,
+      "mention_rate": 0.01,
+      "is_gap": true
+    }
+  ],
+  "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa": [
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "location",
+      "hq_mention_count": 298,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.708,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "room_cleanliness",
+      "hq_mention_count": 146,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.347,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "breakfast",
+      "hq_mention_count": 177,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.42,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "decor_renovation",
+      "hq_mention_count": 28,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.067,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "bar",
+      "hq_mention_count": 10,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.024,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "staff_attitude",
+      "hq_mention_count": 182,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.432,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "parking",
+      "hq_mention_count": 66,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.157,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "room_noise",
+      "hq_mention_count": 53,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.126,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "value_for_money",
+      "hq_mention_count": 28,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.067,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "checkin_experience",
+      "hq_mention_count": 25,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.059,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "bed_comfort",
+      "hq_mention_count": 43,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.102,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "elevator",
+      "hq_mention_count": 6,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.014,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "room_size",
+      "hq_mention_count": 56,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.133,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "lobby",
+      "hq_mention_count": 3,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.007,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "room_climate",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.012,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "room_view",
+      "hq_mention_count": 12,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.029,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "bathroom",
+      "hq_mention_count": 7,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.017,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "wine and cheese",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.002,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "entertainment",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.002,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "balcony",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.002,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "outdoor",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.012,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "wine tasting",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.002,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "smell",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.005,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "business",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.002,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "restaurant",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 421,
+      "mention_rate": 0.002,
+      "is_gap": true
+    }
+  ],
+  "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838": [
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "staff_attitude",
+      "hq_mention_count": 246,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.577,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "lobby",
+      "hq_mention_count": 21,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.049,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "location",
+      "hq_mention_count": 123,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.289,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "pool",
+      "hq_mention_count": 14,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.033,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "room_cleanliness",
+      "hq_mention_count": 187,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.439,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "value_for_money",
+      "hq_mention_count": 30,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.07,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "bathroom",
+      "hq_mention_count": 27,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.063,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "parking",
+      "hq_mention_count": 6,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.014,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "restaurant",
+      "hq_mention_count": 37,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.087,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "checkin_experience",
+      "hq_mention_count": 36,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.085,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "bed_comfort",
+      "hq_mention_count": 41,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.096,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "gym_fitness",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.012,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "decor_renovation",
+      "hq_mention_count": 65,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.153,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "breakfast",
+      "hq_mention_count": 32,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.075,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "room_size",
+      "hq_mention_count": 33,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.077,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "dog_friendly",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.002,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "bar",
+      "hq_mention_count": 25,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.059,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "room_noise",
+      "hq_mention_count": 24,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.056,
+      "is_gap": false
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "smell",
+      "hq_mention_count": 5,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.012,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "housekeeping",
+      "hq_mention_count": 9,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.021,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "business",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.005,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "outdoor",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.005,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "amenities",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.002,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "wifi",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.002,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "entertainment",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.005,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "kitchen",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.002,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "room_climate",
+      "hq_mention_count": 8,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.019,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "elevator",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.005,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "shuttle",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.005,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "pantry",
+      "hq_mention_count": 1,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.002,
+      "is_gap": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "room_view",
+      "hq_mention_count": 2,
+      "hq_total_reviews": 426,
+      "mention_rate": 0.005,
+      "is_gap": true
+    }
+  ]
+}

@@ -1,0 +1,1804 @@
+{
+  "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0": [
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "staff_attitude",
+      "latest_hq_date": "2026-02-05",
+      "days_since": 69,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "breakfast",
+      "latest_hq_date": "2026-02-05",
+      "days_since": 69,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "checkin_experience",
+      "latest_hq_date": "2024-05-20",
+      "days_since": 695,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "room_cleanliness",
+      "latest_hq_date": "2026-02-05",
+      "days_since": 69,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "smell",
+      "latest_hq_date": "2023-10-22",
+      "days_since": 906,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "room_climate",
+      "latest_hq_date": "2025-08-23",
+      "days_since": 235,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "bathroom",
+      "latest_hq_date": "2025-08-05",
+      "days_since": 253,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "room_service",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "bed_comfort",
+      "latest_hq_date": "2025-10-05",
+      "days_since": 192,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "restaurant",
+      "latest_hq_date": "2025-07-19",
+      "days_since": 270,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "decor_renovation",
+      "latest_hq_date": "2026-02-05",
+      "days_since": 69,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "value_for_money",
+      "latest_hq_date": "2025-11-04",
+      "days_since": 162,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "mini-safe",
+      "latest_hq_date": "2024-06-25",
+      "days_since": 659,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "mini-fridge",
+      "latest_hq_date": "2024-06-25",
+      "days_since": 659,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "wifi",
+      "latest_hq_date": "2024-10-18",
+      "days_since": 544,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "110f01b8ae518a0ee41047bce5c22572988a435e10ead72dc1af793bba8ce0b0",
+      "dimension": "laundry",
+      "latest_hq_date": "2025-10-15",
+      "days_since": 182,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    }
+  ],
+  "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941": [
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "staff_attitude",
+      "latest_hq_date": "2026-02-06",
+      "days_since": 68,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "room_climate",
+      "latest_hq_date": "2026-01-17",
+      "days_since": 88,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "room_cleanliness",
+      "latest_hq_date": "2026-02-06",
+      "days_since": 68,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "decor_renovation",
+      "latest_hq_date": "2025-08-19",
+      "days_since": 239,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "bed_comfort",
+      "latest_hq_date": "2026-02-06",
+      "days_since": 68,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "breakfast",
+      "latest_hq_date": "2025-05-06",
+      "days_since": 344,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "kitchen",
+      "latest_hq_date": "2025-11-10",
+      "days_since": 156,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "checkin_experience",
+      "latest_hq_date": "2026-02-06",
+      "days_since": 68,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "smell",
+      "latest_hq_date": "2025-11-09",
+      "days_since": 157,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "bathroom",
+      "latest_hq_date": "2026-02-06",
+      "days_since": 68,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "restaurant",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "value_for_money",
+      "latest_hq_date": "2025-12-27",
+      "days_since": 109,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "housekeeping",
+      "latest_hq_date": "2023-11-19",
+      "days_since": 878,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "hot_tub",
+      "latest_hq_date": "2025-11-26",
+      "days_since": 140,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "wifi",
+      "latest_hq_date": "2025-07-30",
+      "days_since": 259,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "entertainment",
+      "latest_hq_date": "2026-01-17",
+      "days_since": 88,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "bar",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "lobby",
+      "latest_hq_date": "2025-04-06",
+      "days_since": 374,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "outdoor",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "pool",
+      "latest_hq_date": "2025-02-24",
+      "days_since": 415,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3216b1b7885bffdb336265a8de7322ba0cd477cfb3d4f99d19acf488f76a1941",
+      "dimension": "gym_fitness",
+      "latest_hq_date": "2025-02-24",
+      "days_since": 415,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    }
+  ],
+  "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820": [
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "staff_attitude",
+      "latest_hq_date": "2025-08-16",
+      "days_since": 242,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "decor_renovation",
+      "latest_hq_date": "2024-12-27",
+      "days_since": 474,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "room_cleanliness",
+      "latest_hq_date": "2025-04-27",
+      "days_since": 353,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "breakfast",
+      "latest_hq_date": "2023-10-30",
+      "days_since": 898,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "bathroom",
+      "latest_hq_date": "2025-04-04",
+      "days_since": 376,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "bed_comfort",
+      "latest_hq_date": "2024-10-11",
+      "days_since": 551,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "restaurant",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "value_for_money",
+      "latest_hq_date": "2025-08-16",
+      "days_since": 242,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "wifi",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "3b984f3ba8df55b2609a1e33fd694cf8407842e1d833c9b4d993b07fc83a2820",
+      "dimension": "lobby",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    }
+  ],
+  "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12": [
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "staff_attitude",
+      "latest_hq_date": "2025-12-07",
+      "days_since": 129,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "decor_renovation",
+      "latest_hq_date": "2023-04-17",
+      "days_since": 1094,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "room_cleanliness",
+      "latest_hq_date": "2023-04-17",
+      "days_since": 1094,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "bed_comfort",
+      "latest_hq_date": "2025-12-07",
+      "days_since": 129,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "restaurant",
+      "latest_hq_date": "2023-11-23",
+      "days_since": 874,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "breakfast",
+      "latest_hq_date": "2025-12-07",
+      "days_since": 129,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "kitchen",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "5f5a0cd8662f0ddf297f2d27358f680daab5d3ac22fd45a4e1c3c3ec2c101a12",
+      "dimension": "value_for_money",
+      "latest_hq_date": "2025-12-07",
+      "days_since": 129,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    }
+  ],
+  "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06": [
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "room_cleanliness",
+      "latest_hq_date": "2026-01-26",
+      "days_since": 79,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "breakfast",
+      "latest_hq_date": "2026-01-18",
+      "days_since": 87,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "smell",
+      "latest_hq_date": "2025-12-24",
+      "days_since": 112,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "pool",
+      "latest_hq_date": "2026-01-21",
+      "days_since": 84,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "bathroom",
+      "latest_hq_date": "2025-10-04",
+      "days_since": 193,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "decor_renovation",
+      "latest_hq_date": "2025-07-15",
+      "days_since": 274,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "staff_attitude",
+      "latest_hq_date": "2026-01-24",
+      "days_since": 81,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "restaurant",
+      "latest_hq_date": "2023-02-28",
+      "days_since": 1142,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "laundry",
+      "latest_hq_date": "2023-07-18",
+      "days_since": 1002,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "value_for_money",
+      "latest_hq_date": "2025-10-04",
+      "days_since": 193,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "checkin_experience",
+      "latest_hq_date": "2025-11-19",
+      "days_since": 147,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "cookies",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "bottled water",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "wifi",
+      "latest_hq_date": "2023-10-31",
+      "days_since": 897,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "bed_comfort",
+      "latest_hq_date": "2026-01-26",
+      "days_since": 79,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "room_climate",
+      "latest_hq_date": "2023-09-24",
+      "days_since": 934,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "entertainment",
+      "latest_hq_date": "2024-02-06",
+      "days_since": 799,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "bikes",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "lobby",
+      "latest_hq_date": "2023-10-10",
+      "days_since": 918,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "gym_fitness",
+      "latest_hq_date": "2023-09-12",
+      "days_since": 946,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "hot_tub",
+      "latest_hq_date": "2024-10-21",
+      "days_since": 541,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "housekeeping",
+      "latest_hq_date": "2025-04-08",
+      "days_since": 372,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "pet_friendly",
+      "latest_hq_date": "2023-03-16",
+      "days_since": 1126,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "luggage carts",
+      "latest_hq_date": "2025-03-01",
+      "days_since": 410,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "dog_friendly",
+      "latest_hq_date": "2026-01-18",
+      "days_since": 87,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "7d027ef72c02eaa17af3c993fd5dba50d17b41a6280389a46c13c7e2c32a5b06",
+      "dimension": "kitchen",
+      "latest_hq_date": "2026-01-21",
+      "days_since": 84,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    }
+  ],
+  "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df": [
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "breakfast",
+      "latest_hq_date": "2026-02-04",
+      "days_since": 70,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "room_cleanliness",
+      "latest_hq_date": "2026-02-04",
+      "days_since": 70,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "staff_attitude",
+      "latest_hq_date": "2025-12-28",
+      "days_since": 108,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "wifi",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "bed_comfort",
+      "latest_hq_date": "2025-10-13",
+      "days_since": 184,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "bathroom",
+      "latest_hq_date": "2025-12-27",
+      "days_since": 109,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "decor_renovation",
+      "latest_hq_date": "2025-11-12",
+      "days_since": 154,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "value_for_money",
+      "latest_hq_date": "2025-09-30",
+      "days_since": 197,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "checkin_experience",
+      "latest_hq_date": "2025-10-29",
+      "days_since": 168,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "bar",
+      "latest_hq_date": "2025-11-04",
+      "days_since": 162,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "room_climate",
+      "latest_hq_date": "2025-09-30",
+      "days_since": 197,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "restaurant",
+      "latest_hq_date": "2025-10-13",
+      "days_since": 184,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "smell",
+      "latest_hq_date": "2023-03-16",
+      "days_since": 1126,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "outdoor",
+      "latest_hq_date": "2024-09-25",
+      "days_since": 567,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "kitchen",
+      "latest_hq_date": "2023-10-30",
+      "days_since": 898,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "shuttle",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "lobby",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "housekeeping",
+      "latest_hq_date": "2025-04-17",
+      "days_since": 363,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "room_comfort",
+      "latest_hq_date": "2024-07-08",
+      "days_since": 646,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "gym_fitness",
+      "latest_hq_date": "2025-11-04",
+      "days_since": 162,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "free snacks",
+      "latest_hq_date": "2023-03-16",
+      "days_since": 1126,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "823fb2499b4e37d99acb65e7198e75965d6496fd1c579f976205c0e6179206df",
+      "dimension": "mobile phone for directions",
+      "latest_hq_date": "2023-03-16",
+      "days_since": 1126,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    }
+  ],
+  "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f": [
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "staff_attitude",
+      "latest_hq_date": "2025-10-26",
+      "days_since": 171,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "room_cleanliness",
+      "latest_hq_date": "2025-10-26",
+      "days_since": 171,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "bed_comfort",
+      "latest_hq_date": "2024-07-28",
+      "days_since": 626,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "restaurant",
+      "latest_hq_date": "2023-07-17",
+      "days_since": 1003,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "decor_renovation",
+      "latest_hq_date": "2024-09-12",
+      "days_since": 580,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "bathroom",
+      "latest_hq_date": "2024-09-12",
+      "days_since": 580,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "breakfast",
+      "latest_hq_date": "2025-10-26",
+      "days_since": 171,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "room_climate",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "smell",
+      "latest_hq_date": "2023-03-17",
+      "days_since": 1125,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "wifi",
+      "latest_hq_date": "2025-05-18",
+      "days_since": 332,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "value_for_money",
+      "latest_hq_date": "2024-07-12",
+      "days_since": 642,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "bar",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "fly screen",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "entertainment",
+      "latest_hq_date": "2024-09-12",
+      "days_since": 580,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "checkin_experience",
+      "latest_hq_date": "2023-03-16",
+      "days_since": 1126,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "9a0043fd4258a1286db1e253ca591662b3aac849da12d0d4f67e08b8f59be65f",
+      "dimension": "room_service",
+      "latest_hq_date": "2024-12-10",
+      "days_since": 491,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    }
+  ],
+  "a036cbe1d9fbf9cba088075d1b4d966ee871df55aa4a58ba0da23c116c499052": [
+    {
+      "hotel_id": "a036cbe1d9fbf9cba088075d1b4d966ee871df55aa4a58ba0da23c116c499052",
+      "dimension": "room_cleanliness",
+      "latest_hq_date": "2023-05-01",
+      "days_since": 1080,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "a036cbe1d9fbf9cba088075d1b4d966ee871df55aa4a58ba0da23c116c499052",
+      "dimension": "breakfast",
+      "latest_hq_date": "2023-05-01",
+      "days_since": 1080,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "a036cbe1d9fbf9cba088075d1b4d966ee871df55aa4a58ba0da23c116c499052",
+      "dimension": "value_for_money",
+      "latest_hq_date": "2023-05-01",
+      "days_since": 1080,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "a036cbe1d9fbf9cba088075d1b4d966ee871df55aa4a58ba0da23c116c499052",
+      "dimension": "staff_attitude",
+      "latest_hq_date": "2023-03-16",
+      "days_since": 1126,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "a036cbe1d9fbf9cba088075d1b4d966ee871df55aa4a58ba0da23c116c499052",
+      "dimension": "restaurant",
+      "latest_hq_date": "2023-03-16",
+      "days_since": 1126,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    }
+  ],
+  "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723": [
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "staff_attitude",
+      "latest_hq_date": "2026-01-25",
+      "days_since": 80,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "lobby",
+      "latest_hq_date": "2025-08-01",
+      "days_since": 257,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "decor_renovation",
+      "latest_hq_date": "2025-11-01",
+      "days_since": 165,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "shuttle",
+      "latest_hq_date": "2023-02-28",
+      "days_since": 1142,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "restaurant",
+      "latest_hq_date": "2026-01-22",
+      "days_since": 83,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "value_for_money",
+      "latest_hq_date": "2025-10-13",
+      "days_since": 184,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "pool",
+      "latest_hq_date": "2025-09-03",
+      "days_since": 224,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "room_cleanliness",
+      "latest_hq_date": "2025-12-26",
+      "days_since": 110,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "breakfast",
+      "latest_hq_date": "2025-11-16",
+      "days_since": 150,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "hot_tub",
+      "latest_hq_date": "2025-11-16",
+      "days_since": 150,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "gym_fitness",
+      "latest_hq_date": "2025-08-01",
+      "days_since": 257,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "bar",
+      "latest_hq_date": "2024-04-30",
+      "days_since": 715,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "bathroom",
+      "latest_hq_date": "2025-05-19",
+      "days_since": 331,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "bed_comfort",
+      "latest_hq_date": "2025-10-16",
+      "days_since": 181,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "spa",
+      "latest_hq_date": "2025-11-10",
+      "days_since": 156,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "room_climate",
+      "latest_hq_date": "2023-08-20",
+      "days_since": 969,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "checkin_experience",
+      "latest_hq_date": "2025-10-13",
+      "days_since": 184,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "wifi",
+      "latest_hq_date": "2023-03-16",
+      "days_since": 1126,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "smell",
+      "latest_hq_date": "2024-11-18",
+      "days_since": 513,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "golf",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "outdoor",
+      "latest_hq_date": "2025-10-27",
+      "days_since": 170,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "room_service",
+      "latest_hq_date": "2025-10-13",
+      "days_since": 184,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "room_comfort",
+      "latest_hq_date": "2025-05-18",
+      "days_since": 332,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "housekeeping",
+      "latest_hq_date": "2025-10-13",
+      "days_since": 184,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "golf course",
+      "latest_hq_date": "2024-07-07",
+      "days_since": 647,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "entertainment",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "amenities",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "kids_pool",
+      "latest_hq_date": "2023-03-16",
+      "days_since": 1126,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "db38b19b897dbece3e34919c662b3fd66d23b615395d11fb69264dd3a9b17723",
+      "dimension": "coffee shop",
+      "latest_hq_date": "2025-06-16",
+      "days_since": 303,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    }
+  ],
+  "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676": [
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "laundry",
+      "latest_hq_date": "2025-04-20",
+      "days_since": 360,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "staff_attitude",
+      "latest_hq_date": "2026-01-18",
+      "days_since": 87,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "room_cleanliness",
+      "latest_hq_date": "2026-01-18",
+      "days_since": 87,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "breakfast",
+      "latest_hq_date": "2023-03-16",
+      "days_since": 1126,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "bed_comfort",
+      "latest_hq_date": "2025-12-04",
+      "days_since": 132,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "decor_renovation",
+      "latest_hq_date": "2025-12-04",
+      "days_since": 132,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "value_for_money",
+      "latest_hq_date": "2025-08-10",
+      "days_since": 248,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "wifi",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "room_climate",
+      "latest_hq_date": "2023-03-16",
+      "days_since": 1126,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "checkin_experience",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "refrigerator",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "e52d67a758ce4ad0229aacc97e5dfe89984c384c51a70208f9e0cc65c9cd4676",
+      "dimension": "bathroom",
+      "latest_hq_date": "2025-12-04",
+      "days_since": 132,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    }
+  ],
+  "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9": [
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "value_for_money",
+      "latest_hq_date": "2023-03-17",
+      "days_since": 1125,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "decor_renovation",
+      "latest_hq_date": "2023-03-17",
+      "days_since": 1125,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "room_cleanliness",
+      "latest_hq_date": "2023-03-17",
+      "days_since": 1125,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "bathroom",
+      "latest_hq_date": "2023-03-16",
+      "days_since": 1126,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "staff_attitude",
+      "latest_hq_date": "2023-03-17",
+      "days_since": 1125,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "pool",
+      "latest_hq_date": "2023-03-16",
+      "days_since": 1126,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "bed_comfort",
+      "latest_hq_date": "2023-03-17",
+      "days_since": 1125,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "smell",
+      "latest_hq_date": "2023-03-17",
+      "days_since": 1125,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "outdoor",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "room_climate",
+      "latest_hq_date": "2023-03-16",
+      "days_since": 1126,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "hot_tub",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "kids_pool",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "kitchen",
+      "latest_hq_date": "2023-03-16",
+      "days_since": 1126,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "checkin_experience",
+      "latest_hq_date": "2023-03-16",
+      "days_since": 1126,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "restaurant",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "f2d8d9557208d58577e9df7ff34e42bf86fb5b10fdfae0c3040d14c374a2a2b9",
+      "dimension": "bar",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    }
+  ],
+  "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa": [
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "room_cleanliness",
+      "latest_hq_date": "2026-01-26",
+      "days_since": 79,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "breakfast",
+      "latest_hq_date": "2026-02-05",
+      "days_since": 69,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "decor_renovation",
+      "latest_hq_date": "2025-05-04",
+      "days_since": 346,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "bar",
+      "latest_hq_date": "2025-03-11",
+      "days_since": 400,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "staff_attitude",
+      "latest_hq_date": "2026-02-05",
+      "days_since": 69,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "value_for_money",
+      "latest_hq_date": "2025-10-25",
+      "days_since": 172,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "checkin_experience",
+      "latest_hq_date": "2025-02-03",
+      "days_since": 436,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "bed_comfort",
+      "latest_hq_date": "2025-12-26",
+      "days_since": 110,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "lobby",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "room_climate",
+      "latest_hq_date": "2025-07-10",
+      "days_since": 279,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "bathroom",
+      "latest_hq_date": "2025-07-21",
+      "days_since": 268,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "wine and cheese",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "entertainment",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "outdoor",
+      "latest_hq_date": "2023-05-09",
+      "days_since": 1072,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "wine tasting",
+      "latest_hq_date": "2024-06-11",
+      "days_since": 673,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "smell",
+      "latest_hq_date": "2023-03-02",
+      "days_since": 1140,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "fa014137b3ea9af6a90c0a86a1d099e46f7e56d6eb33db1ad1ec4bdac68c3caa",
+      "dimension": "restaurant",
+      "latest_hq_date": "2023-03-16",
+      "days_since": 1126,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    }
+  ],
+  "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838": [
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "staff_attitude",
+      "latest_hq_date": "2026-01-05",
+      "days_since": 100,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "lobby",
+      "latest_hq_date": "2025-12-15",
+      "days_since": 121,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "pool",
+      "latest_hq_date": "2025-05-20",
+      "days_since": 330,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "room_cleanliness",
+      "latest_hq_date": "2026-01-05",
+      "days_since": 100,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "value_for_money",
+      "latest_hq_date": "2025-12-04",
+      "days_since": 132,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "bathroom",
+      "latest_hq_date": "2025-12-15",
+      "days_since": 121,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "restaurant",
+      "latest_hq_date": "2025-12-15",
+      "days_since": 121,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "checkin_experience",
+      "latest_hq_date": "2025-11-07",
+      "days_since": 159,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "bed_comfort",
+      "latest_hq_date": "2025-10-27",
+      "days_since": 170,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "gym_fitness",
+      "latest_hq_date": "2025-10-26",
+      "days_since": 171,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "decor_renovation",
+      "latest_hq_date": "2026-01-12",
+      "days_since": 93,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "breakfast",
+      "latest_hq_date": "2026-01-12",
+      "days_since": 93,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "dog_friendly",
+      "latest_hq_date": "2023-10-08",
+      "days_since": 920,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "bar",
+      "latest_hq_date": "2025-11-25",
+      "days_since": 141,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "smell",
+      "latest_hq_date": "2025-11-07",
+      "days_since": 159,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "housekeeping",
+      "latest_hq_date": "2025-12-15",
+      "days_since": 121,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "outdoor",
+      "latest_hq_date": "2024-04-07",
+      "days_since": 738,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "amenities",
+      "latest_hq_date": "2024-04-07",
+      "days_since": 738,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "wifi",
+      "latest_hq_date": "2023-05-02",
+      "days_since": 1079,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "entertainment",
+      "latest_hq_date": "2023-05-02",
+      "days_since": 1079,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "kitchen",
+      "latest_hq_date": "2024-04-23",
+      "days_since": 722,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "room_climate",
+      "latest_hq_date": "2025-08-26",
+      "days_since": 232,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "shuttle",
+      "latest_hq_date": "2025-02-10",
+      "days_since": 429,
+      "is_time_stale": true,
+      "is_time_sensitive": true
+    },
+    {
+      "hotel_id": "ff26cdda236b233f7c481f0e896814075ac6bed335e162e0ff01d5491343f838",
+      "dimension": "pantry",
+      "latest_hq_date": "2025-05-20",
+      "days_since": 330,
+      "is_time_stale": false,
+      "is_time_sensitive": true
+    }
+  ]
+}
