@@ -3,14 +3,8 @@ import OpenAI from "openai";
 import { HttpsProxyAgent } from "https-proxy-agent";
 import { getHotelById } from "@/lib/data-store";
 import {
-  buildFollowUpFromPipeline,
   getInitialFollowUps,
-  getCoarseTopics,
-  getDimensionLabels,
-  buildFollowUpForTopic,
-  buildFollowUpForDimension,
-  getGeneralFollowUp,
-  getPipelineIssuesForLLM,
+  getFollowUpContext,
 } from "@/lib/pipeline-followup";
 
 function getClient(): OpenAI | null {
@@ -21,6 +15,56 @@ function getClient(): OpenAI | null {
   if (proxy) opts.httpAgent = new HttpsProxyAgent(proxy);
   return new OpenAI(opts);
 }
+
+/* ═══════════════════════════════════════════════════════════
+   SYSTEM PROMPT — single source of truth for follow-up logic
+   ═══════════════════════════════════════════════════════════ */
+
+const SYSTEM_PROMPT = `You are a smart hotel review follow-up assistant. Your job is to help hotel guests write more detailed, useful reviews by asking ONE follow-up question at a time.
+
+## Context
+- Everything the user writes is about a HOTEL stay. Words like "shuttle", "pool", "breakfast", "parking" all refer to the HOTEL's services.
+- You have access to a pipeline database that identifies information gaps and stale/outdated information in this hotel's existing reviews.
+- Your goal: help the guest provide details that fill these gaps or verify potentially outdated information.
+
+## Decision Logic
+
+Analyze the user's LAST sentence/phrase in their review draft. Then choose ONE of these strategies:
+
+### Strategy A — User Topic Follow-up (when user mentions a specific topic)
+If the last sentence mentions a recognizable hotel topic (e.g., "breakfast", "shuttle", "room", "wifi", "staff", "pool", "noise", "parking", "location"...):
+1. Check if this topic relates to any pipeline issue (gap or stale).
+2. If YES: ask a follow-up that helps fill that gap or verify stale info. Include a verification option in the chips if there's stale data (e.g., if old reviews said "restaurant under construction", add a chip like "Still under renovation" or "Now open").
+3. If NO pipeline issue: still ask a relevant follow-up about their topic to get more details. For example, "breakfast is good" → "What did you enjoy most about breakfast?"
+
+### Strategy B — Pipeline Priority (when user's input is complete/generic)
+If the last sentence wraps up a thought, is very generic ("Overall good stay"), or the user wrote a long paragraph covering their topic fully:
+1. Pick the highest-priority pipeline issue that hasn't been covered yet.
+2. Introduce the topic naturally as a new question.
+
+## Rules
+1. You MUST always return a follow-up question. Never return empty or null.
+2. The question must be concise (max 15 words), natural, and easy to answer.
+3. Generate 6 quick-reply chips that DIRECTLY ANSWER your question:
+   - Chips must be specific to YOUR question (not generic hotel aspects).
+   - If user sentiment is negative → chips should be issue-related (e.g., "Long wait", "Cold food", "Limited options").
+   - If user sentiment is positive → chips should be positive aspects (e.g., "Great variety", "Fresh food", "Friendly staff").
+   - If there's stale/outdated info for this topic, include 1-2 verification chips (e.g., "Still an issue", "Now fixed", "Under renovation").
+4. Mark which chips are "negative" (issue-related) — these trigger a "What happened?" text input for details.
+5. Skip topics the user has already covered in their review or that appear in the answered topics list.
+6. For semantic matching: "breakfast" relates to "restaurant/dining", "shuttle" relates to "location/transport", "noisy" relates to "noise level/room", "hot room" relates to "air conditioning".
+
+## Output Format
+Return ONLY valid JSON:
+{
+  "topic": "the coarse topic category (room/service/breakfast/pool/parking/location/wifi/facilities/dining/overall)",
+  "question": "Your follow-up question here?",
+  "rationale": "Brief reason why this helps (max 12 words)",
+  "quickReplies": ["Chip 1", "Chip 2", "Chip 3", "Chip 4", "Chip 5", "Chip 6"],
+  "negativeChips": ["Chip 3", "Chip 4"]
+}
+
+Note: negativeChips is a subset of quickReplies — only the chips that represent negative/issue aspects.`;
 
 export async function POST(req: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
@@ -45,139 +89,85 @@ export async function POST(req: Request, { params }: { params: Promise<{ id: str
     return NextResponse.json({ followUps });
   }
 
-  // ── Mode: draft — try instant pipeline matching first, then LLM ──
-  const pipelineResult = buildFollowUpFromPipeline(id, draftReview, undefined, rating, answeredTopics);
-  if (pipelineResult) {
-    return NextResponse.json(pipelineResult);
-  }
-
-  // Pipeline keyword matching failed — use LLM for smart context-aware follow-up
+  // ── Mode: draft — ALWAYS use LLM for context-aware follow-up ──
   const client = getClient();
-  if (client && draftReview.length > 0) {
-    try {
-      const dimensionLabels = getDimensionLabels(id);
-      const answeredSet = new Set(answeredTopics.map((t: string) => t.toLowerCase()));
-
-      // Filter out dimensions whose coarse topic is already answered
-      const availableDimensions = dimensionLabels.filter((label) => {
-        return !answeredTopics.some((at) => {
-          const atLower = at.toLowerCase();
-          return atLower === label || label.includes(atLower) || atLower.includes(label);
-        });
-      });
-
-      if (availableDimensions.length === 0) {
-        const general = getGeneralFollowUp(draftReview, rating);
-        if (general) return NextResponse.json(general);
-        return NextResponse.json({ topic: null });
-      }
-
-      // Get pipeline issues for context (priority + evidence)
-      const pipelineContext = getPipelineIssuesForLLM(id);
-      const issuesSummary = pipelineContext.issues
-        .filter((i) => !answeredSet.has(i.coarseTopic))
-        .slice(0, 5)
-        .map((i) => `- ${i.coarseTopic} (${i.dimension}): priority ${i.priority}, type: ${i.issueType}, evidence: "${i.evidence}"`)
-        .join("\n");
-
-      const response = await client.chat.completions.create({
-        model: "gpt-4o-mini",
-        messages: [
-          {
-            role: "system",
-            content: `You are a smart hotel review assistant. Analyze the user's review draft and decide the best follow-up.
-
-You have TWO strategies:
-1. **User-centric**: If the user's LAST sentence mentions a specific topic (e.g. "shuttle", "breakfast", "noisy neighbors"), ask a relevant follow-up question about THAT topic. The question should dig deeper into what the user is writing about.
-2. **Pipeline-driven**: If the user's last sentence is generic or wraps up a thought (e.g. "Overall it was nice.", "We had a good time."), suggest the highest-priority information gap from the pipeline issues list.
-
-Return JSON with these fields:
-- "strategy": "user_centric" or "pipeline_driven"
-- "dimension": the matched dimension name from the available list (EXACTLY as listed), or "general" if none fit
-- "question": a natural, specific follow-up question (max 15 words). For user-centric, ask about what THEY mentioned. For pipeline-driven, introduce the gap topic naturally.
-- "rationale": one short sentence explaining why this question helps (max 15 words)
-- "chips": array of 6 short (1-3 word) quick-reply options that DIRECTLY answer the question. These must be specific to the question, NOT generic.
-
-Rules:
-- Semantic matching: "breakfast" → "restaurant", "shuttle" → "location", "noisy" → "noise level", "hot room" → "air conditioning"
-- If the review already covers a dimension, skip it
-- Keep questions conversational and easy to answer
-- Chips MUST be relevant answers to YOUR question. E.g. if question is "What was the issue with breakfast?" → chips like "Limited options", "Not fresh", "Long wait", "Cold food", "Crowded", "Overpriced". If question is "How was the shuttle service?" → "On time", "Frequent", "Long wait", "Unreliable", "Comfortable", "Hard to find"
-- If user sentiment is negative, chips should be mostly negative issues. If positive, chips should be positive aspects.
-- Return ONLY valid JSON, nothing else`,
-          },
-          {
-            role: "user",
-            content: `Review draft: "${draftReview}"
-
-Available dimensions (with info gaps): ${availableDimensions.join(", ")}
-
-Pipeline priority issues:
-${issuesSummary || "No priority issues available."}
-
-Generate the best follow-up.`,
-          },
-        ],
-        temperature: 0.3,
-        max_tokens: 150,
-      });
-
-      const raw = response.choices[0]?.message?.content?.trim() || "";
-      let llmResult: { strategy?: string; dimension?: string; question?: string; rationale?: string; chips?: string[] } = {};
-      try {
-        const jsonStr = raw.replace(/^```json?\s*/, "").replace(/\s*```$/, "");
-        llmResult = JSON.parse(jsonStr);
-      } catch {
-        llmResult = { dimension: raw.toLowerCase(), strategy: "pipeline_driven" };
-      }
-
-      const detected = (llmResult.dimension || "general").toLowerCase();
-      const llmChips = Array.isArray(llmResult.chips) && llmResult.chips.length > 0 ? llmResult.chips : null;
-
-      // Helper: apply LLM overrides (question, rationale, chips) to a follow-up result
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const applyLLMOverrides = (fu: any) => {
-        if (llmResult.question) fu.question = llmResult.question;
-        if (llmResult.rationale) fu.rationale = llmResult.rationale;
-        if (llmChips) {
-          fu.quickReplies = llmChips;
-          // Determine negative chips: if user sentiment is negative, all chips are negative
-          const sentimentNeg = draftReview.toLowerCase().match(/terrible|bad|awful|dirty|noisy|rude|slow|uncomfortable|disappointing|worst|horrible|poor|broken|disgusting|issue|problem/);
-          fu.negativeChips = sentimentNeg ? llmChips : [];
-        }
-      };
-
-      if (detected !== "general") {
-        // Try dimension-level match first
-        const followUp = buildFollowUpForDimension(id, detected, draftReview, rating);
-        if (followUp && !answeredSet.has(followUp.topic.toLowerCase())) {
-          applyLLMOverrides(followUp);
-          return NextResponse.json(followUp);
-        }
-
-        // Fallback: try as coarse topic
-        const coarseTopics = getCoarseTopics(id);
-        if (coarseTopics.includes(detected) && !answeredSet.has(detected)) {
-          const topicFollowUp = buildFollowUpForTopic(id, detected, draftReview, rating);
-          if (topicFollowUp) {
-            applyLLMOverrides(topicFollowUp);
-            return NextResponse.json(topicFollowUp);
-          }
-        }
-      }
-
-      // LLM said "general" or no pipeline match
-      const general = getGeneralFollowUp(draftReview, rating);
-      if (general) {
-        if (detected === "general") applyLLMOverrides(general);
-        return NextResponse.json(general);
-      }
-    } catch {
-      // LLM failed — try general fallback
-      const general = getGeneralFollowUp(draftReview, rating);
-      if (general) return NextResponse.json(general);
-    }
+  if (!client) {
+    // No API key — use basic pipeline fallback
+    const fallback = getInitialFollowUps(id, 1, rating);
+    if (fallback.length > 0) return NextResponse.json(fallback[0]);
+    return NextResponse.json({
+      topic: "overall",
+      question: "What stood out during your stay?",
+      rationale: "Help future guests with details",
+      quickReplies: ["Great room", "Friendly staff", "Good location", "Room issues", "Poor service", "Overpriced"],
+      negativeChips: ["Room issues", "Poor service", "Overpriced"],
+    });
   }
 
-  return NextResponse.json({ topic: null });
+  try {
+    // Build comprehensive context for LLM
+    const context = getFollowUpContext(id, answeredTopics);
+
+    const userMessage = `Hotel: "${hotel.name}"
+Rating given: ${rating > 0 ? `${rating}/10` : "not yet rated"}
+
+Review draft:
+"${draftReview}"
+
+Already answered topics: ${answeredTopics.length > 0 ? answeredTopics.join(", ") : "none"}
+
+Pipeline issues for this hotel (sorted by priority):
+${context.issuesSummary || "No issues detected."}
+
+Available dimensions with info gaps: ${context.availableDimensions.join(", ") || "none"}
+
+Generate the best follow-up question.`;
+
+    const response = await client.chat.completions.create({
+      model: "gpt-4o-mini",
+      messages: [
+        { role: "system", content: SYSTEM_PROMPT },
+        { role: "user", content: userMessage },
+      ],
+      temperature: 0.3,
+      max_tokens: 200,
+    });
+
+    const raw = response.choices[0]?.message?.content?.trim() || "";
+    let result;
+    try {
+      const jsonStr = raw.replace(/^```json?\s*/, "").replace(/\s*```$/, "");
+      result = JSON.parse(jsonStr);
+    } catch {
+      // JSON parse failed — return a safe fallback
+      result = null;
+    }
+
+    if (result && result.topic && result.question && Array.isArray(result.quickReplies)) {
+      return NextResponse.json({
+        topic: result.topic,
+        question: result.question,
+        rationale: result.rationale || "",
+        quickReplies: result.quickReplies.slice(0, 6),
+        negativeChips: Array.isArray(result.negativeChips) ? result.negativeChips : [],
+      });
+    }
+
+    // LLM returned something unparseable — use pipeline fallback
+    const fallback = getInitialFollowUps(id, 1, rating);
+    if (fallback.length > 0) return NextResponse.json(fallback[0]);
+  } catch {
+    // LLM call failed — use pipeline fallback
+    const fallback = getInitialFollowUps(id, 1, rating);
+    if (fallback.length > 0) return NextResponse.json(fallback[0]);
+  }
+
+  // Ultimate fallback — always return something
+  return NextResponse.json({
+    topic: "overall",
+    question: "What else would you like to share about your stay?",
+    rationale: "Your details help future guests",
+    quickReplies: ["Great room", "Friendly staff", "Good location", "Room issues", "Poor service", "Needs improvement"],
+    negativeChips: ["Room issues", "Poor service", "Needs improvement"],
+  });
 }
