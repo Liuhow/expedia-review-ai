@@ -187,7 +187,7 @@ export function SmartFollowupSidebar({
       </div>
 
       {/* Question */}
-      <p className="text-base font-semibold text-slate-800 leading-snug">
+      <p className="text-sm font-semibold text-slate-800 leading-snug">
         {followUpData.question}
       </p>
 
